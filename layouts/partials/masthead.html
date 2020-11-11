@@ -1,0 +1,25 @@
+<header class="masthead">
+    <div class="mh-inner">
+        <nav class="mh-menu">
+            <ul>
+                <li>
+                    <div class="mh-logo">
+                        <img class="avatar" src="{{ .Site.Params.Author.avatar }}" alt="avatar" />
+                        <div class="text mh-item">
+                            <a href="/">{{ .Site.Params.Author.name }}</a>
+                        </div>
+                    </div>
+                </li>
+                {{ $current := . }}
+                {{ range .Site.Menus.main }}
+                <li>
+                    <a class='mh-item {{ if or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}selected{{ end }}' href="{{ .URL | relLangURL }}">{{ safeHTML .Name }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </nav>
+        <nav class="mh-settings">
+            <div class="mh-item"><div>Setting</div></div>
+        </nav>
+    </div>
+</header>

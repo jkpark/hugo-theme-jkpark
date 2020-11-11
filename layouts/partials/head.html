@@ -1,0 +1,41 @@
+
+<meta charset="UTF-8">
+
+<title>
+    {{if not .IsHome}}{{.Title}} - {{end}}{{ $.Site.Title }}
+</title>
+
+<meta name="author" content="{{ .Site.Params.Author.name }}">
+<meta itemprop="description" name="description" content="{{.Description}}" />
+<meta name="keywords" content="{{ delimit .Keywords ',' }}">
+
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+{{ with $.Param "image" }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+
+{{ hugo.Generator }}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--
+{{/*
+<link rel="canonical" href="{{ page.url | prepend: site.url }}">
+
+{% include analytics.html %}
+
+{% if site.google_site_verification %}
+<meta name="google-site-verification" content="H73FzMq39pLvMqBQL_e5f-JlaipO9MkcGC_ce_3xlDA" />
+{% endif %}
+
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+*/}}
+ -->
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Ubuntu+Mono|Roboto:400,700,300italic" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/css/masthead.css">
+<link rel="stylesheet" href="/css/footer.css">

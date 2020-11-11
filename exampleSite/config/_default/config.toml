@@ -1,0 +1,29 @@
+# Your website URL (e.g. http://jkpark.github.io)
+baseURL = "http://example.org"
+
+theme = "jkpark"
+
+title = "jkpark Demo"
+
+disqus = ""
+
+# Uncomment for google analytics
+google_analytics = ""
+
+languageCode = "ko"
+hasCJKLanguage = false  # Set `true` for Chinese/Japanese/Korean.
+defaultContentLanguageInSubdir = false # baseURL/en/, baseURL/kr/ ...
+
+timeout = 10000
+
+# Enable Emoji emoticons support for page content; see the Emoji Cheat Sheet(https://www.webfx.com/tools/emoji-cheat-sheet/).
+enableEmoji = true
+
+# Default number of elements per page in pagination.
+paginate = 10
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      xHTML = true
