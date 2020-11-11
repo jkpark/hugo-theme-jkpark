@@ -2,8 +2,6 @@
 title: Blog
 description: Blog Main
 draft: false
-weight: 1
+weight: 0
 collapsible: true
 ---
-
-hello this is blog page.

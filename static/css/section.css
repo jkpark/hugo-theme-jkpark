@@ -1,0 +1,50 @@
+#section-content {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+#section-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#section-list > *, #section-content > * {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section-list-header {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--color-border);
+}
+
+#section-list ul li + li {
+    border-top: 1px solid var(--color-border);
+}
+
+#section-list li {
+    display: flex;
+}
+
+#section-list li a{
+    padding: 10px;
+    width: 100%;
+}
+
+#section-list li a:hover {
+    background-color: var(--color-bg-secondary);
+}
+
+#section-list .date {
+    font-family: "Ubuntu Mono";
+    padding-bottom: 10px;
+}
+
+

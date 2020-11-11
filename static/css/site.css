@@ -1,0 +1,110 @@
+:root {
+    --max-width: 800px;
+    --color-bg-primary: rgba(255, 255, 255);
+    --color-bg-secondary: rgba(0, 0, 0, 0.1);
+    --color-text-primary: rgb(50, 50, 50);
+    --color-text-secondary: rgb(100, 100, 100);
+    --color-text-opposite: rgba(255, 255, 255);
+    --color-text-link:rgb(39, 91, 160);
+    --color-border: rgb(200, 200, 200);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-rendering: optimizeLegibility;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+}
+
+p {
+    margin: 0.5em 0;
+    line-height: 160%;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: var(--color-text-link);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--color-text-secondary);
+}
+
+a.no-link-color {
+    color: var(--color-text-primary);
+}
+
+
+
+
+/*      Masthead      */
+.masthead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26,26,26);
+}
+.mh-inner {
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mh-item {
+    min-width: 30px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.mh-item:link,
+.mh-item:visited,
+.mh-item:focus,
+.mh-item:active,
+.mh-item {
+    color: rgb(187, 187, 187);
+}
+.mh-item.selected,
+.mh-item:hover {
+    color: rgb(255, 255, 255);
+}
+
+.mh-logo {
+    display: flex;
+}
+
+.mh-logo .avatar {
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    padding: 7px;
+}
+
+.mh-menu ul, .mh-menu li{
+    display: flex;
+    list-style: none;
+}
+
+/*      Footer      */
+footer {
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: center;
+  
+    font-size: small;
+    height: 100%;
+}
+  

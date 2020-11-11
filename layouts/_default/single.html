@@ -1,0 +1,11 @@
+{{ define "main" }}
+<section id="post">
+  <header id="post-header">
+    <div class="post-date"><small>{{ .Date.Format .Site.Params.date.format }}</small></div>
+    <div class="post-title">{{ .Title }}</div>
+  </header>
+  <article id="post-article">
+    {{ .Content }}
+  </article>
+</section>
+{{ end }}

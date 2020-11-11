@@ -1,3 +1,30 @@
 {{ define "main" }}
-  {{ .Content }}
+
+<section id="section-content">
+  {{ with .Content }}
+    {{ . }}
+  {{ end }}
+</section>
+<section id="section-list">
+  <header id="section-list-header">{{ .Section }}</header>
+  <ul>
+    {{ range .Pages }}
+    <li>
+      <a class="no-link-color" href="{{ .RelPermalink }}">
+      <div class="">
+        <div class="date"><small>{{ .Date.Format .Site.Params.date.format }}</small></div>
+        <div class="title"><h3>{{ .LinkTitle }}</h3></div>
+        <div class="summary">
+          <p>
+            {{ .Summary | truncate 180 }}
+            {{ if .Truncated }}<span><small><b>[Read More]</b></small></span>{{ end }}
+          </p>
+        </div>
+      </div>
+    </a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+
 {{ end }}

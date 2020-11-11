@@ -5,9 +5,7 @@
                 <li>
                     <div class="mh-logo">
                         <img class="avatar" src="{{ .Site.Params.Author.avatar }}" alt="avatar" />
-                        <div class="text mh-item">
-                            <a href="/">{{ .Site.Params.Author.name }}</a>
-                        </div>
+                        <a href="/" class="text mh-item">{{ .Site.Params.Author.name }}</a>
                     </div>
                 </li>
                 {{ $current := . }}
@@ -19,7 +17,7 @@
             </ul>
         </nav>
         <nav class="mh-settings">
-            <div class="mh-item"><div>Setting</div></div>
+            <a class="mh-item">Setting</a>
         </nav>
     </div>
 </header>

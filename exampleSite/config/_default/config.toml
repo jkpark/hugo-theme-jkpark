@@ -22,6 +22,9 @@ enableEmoji = true
 # Default number of elements per page in pagination.
 paginate = 10
 
+# 
+summaryLength = 20
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
