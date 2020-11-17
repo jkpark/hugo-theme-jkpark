@@ -1,4 +1,37 @@
 {{ define "main" }}
-
-
+    {{ if .Site.Data.aboutme }}
+    <section class="aboutme">
+        <div class="wrapper">
+            <article class="aboutme">
+                <h1>{{ .Site.Data.aboutme.title }}</h1>
+                <p>{{ .Site.Data.aboutme.description  | markdownify }}</p>
+            </article>
+        </div>
+    </section>
+    {{ end }}
+    
+    {{ if .Site.Data.projects }}
+    <section class="projects">
+        <div class="wrapper">
+            <header><h1>Projects</h1></header>
+            {{ range .Site.Data.projects.projects }}
+            <section class="project">
+                <img src="{{ .image }}" class="project-image" alt="{{ .name }}" onerror="this.style.display='none'" />
+                <div>
+                    <h1>{{ .name | safeHTML }}</h1>
+                    <p>{{ .oneliner | safeHTML }}</p>
+                    <p><strong>As {{ .role | safeHTML }}</strong></p>
+                    <p>{{ .description | truncate 300 | safeHTML }}</p>
+                    <p>
+                        <strong>Achievements</strong><br>
+                        {{ range .achievements }}
+                            {{ . | safeHTML }}<br>
+                        {{ end }}
+                    </p>
+                </div>
+            </section>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
 {{ end }}

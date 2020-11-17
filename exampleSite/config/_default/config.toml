@@ -30,3 +30,8 @@ summaryLength = 20
     [markup.goldmark.renderer]
       unsafe = true
       xHTML = true
+      safeHTML = true
+
+  [markup.tableOfContents]
+    endLevel = 4
+    startLevel = 1

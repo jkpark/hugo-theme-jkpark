@@ -1,23 +1,23 @@
-<header class="masthead">
-    <div class="mh-inner">
+<header id="masthead" class="thm-dark">
+    <div class="wrapper">
         <nav class="mh-menu">
             <ul>
                 <li>
                     <div class="mh-logo">
                         <img class="avatar" src="{{ .Site.Params.Author.avatar }}" alt="avatar" />
-                        <a href="/" class="text mh-item">{{ .Site.Params.Author.name }}</a>
+                        <a href="/" class="text mh-item no-color-link">{{ .Site.Params.Author.name }}</a>
                     </div>
                 </li>
                 {{ $current := . }}
                 {{ range .Site.Menus.main }}
                 <li>
-                    <a class='mh-item {{ if or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}selected{{ end }}' href="{{ .URL | relLangURL }}">{{ safeHTML .Name }}</a>
+                    <a class='mh-item no-color-link {{ if or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}selected{{ end }}' href="{{ .URL | relLangURL }}">{{ safeHTML .Name }}</a>
                 </li>
                 {{ end }}
             </ul>
         </nav>
         <nav class="mh-settings">
-            <a class="mh-item">Setting</a>
+            <a class="mh-item no-color-link" href="#">Setting</a>
         </nav>
     </div>
 </header>

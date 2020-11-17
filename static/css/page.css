@@ -1,0 +1,69 @@
+#section-content {
+}
+
+#section-content .wrapper {
+    padding-top: 10vh;
+    padding-bottom: 20px;
+}
+
+#section-title {
+    font-size: 2em;
+}
+#section-article {
+}
+
+#section-list {
+}
+
+#section-list .wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#section-list ul li + li {
+    margin-top: 20px;
+}
+
+#section-list li {
+    display: flex;
+}
+
+#section-list li a{
+    padding: 30px;
+    width: 100%;
+    background-color: var(--color-bg-secondary);
+}
+
+#section-list li a:hover {
+    background-color: var(--color-bg-hover);
+}
+
+#section-list .date {
+    font-family: "Ubuntu Mono";
+    padding-bottom: 10px;
+}
+
+
+/*                                       */
+#post-header {
+    
+}
+
+#post-header .wrapper {
+    padding-top: 10vh;
+    padding-bottom: 20px;
+}
+
+#post-header .post-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#post-header .post-date {
+    font-family: "Ubuntu Mono";
+    padding-bottom: 10px;
+}
+
+#post-article {
+}

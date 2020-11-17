@@ -1,0 +1,26 @@
+projects:
+- name: JK Park theme
+  image: /images/projects/jkpark_theme.png
+  oneliner: jkpark theme for Hugo
+  role: Android Developer
+  language : Java with NJI
+  description: >
+    this is my personal theme but open sourced.
+  special-learned:
+    - Hugo Architecte
+    - CSS and HTML5
+  achievements:
+    - open sourced
+  
+- name: Seconde Project
+  image: 
+  oneliner: one line descprtion
+  role: a developer
+  language : Java? C?
+  description: >
+    second project desciption
+  special-learned:
+    - What do you learned
+    - <a href="#">A Tag</a>
+  achievements:
+    - your achievements

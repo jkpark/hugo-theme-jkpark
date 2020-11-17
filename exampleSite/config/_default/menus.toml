@@ -1,17 +1,19 @@
 [[main]]
     identifier = "about"
     name = "About"
-    url = "about/"
+    url = "/"
     weight = 1
 
 [[main]]
     identifier = "blog"
     name = "Blog"
-    url = "blog/"
+    url = "/blog/"
     weight = 2
+    type = "page"
 
 [[main]]
     identifier = "docs"
     name = "Docs"
-    url = "docs/"
+    url = "/docs/"
     weight = 3
+    type = "book"

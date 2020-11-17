@@ -1,11 +1,16 @@
 {{ define "main" }}
-<section id="post">
-  <header id="post-header">
-    <div class="post-date"><small>{{ .Date.Format .Site.Params.date.format }}</small></div>
-    <div class="post-title">{{ .Title }}</div>
+<section class="post">
+  <header id="post-header" class="thm-dark">
+    <div class="wrapper">
+      <div class="post-date"><small>{{ .Date.Format .Site.Params.date.format }}</small></div>
+      <div class="post-title">{{ .Title }}</div>
+    </div>
   </header>
+
   <article id="post-article">
-    {{ .Content }}
+    <div class="wrapper">
+      {{ .Content }}
+    </div>
   </article>
 </section>
 {{ end }}
