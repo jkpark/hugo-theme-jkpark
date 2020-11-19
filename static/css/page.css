@@ -12,14 +12,11 @@
 #section-article {
 }
 
-#section-list {
-}
 
-#section-list .wrapper {
+#section-list {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 
 #section-list ul li + li {
     margin-top: 20px;
@@ -27,21 +24,35 @@
 
 #section-list li {
     display: flex;
-}
-
-#section-list li a{
-    padding: 30px;
-    width: 100%;
-    background-color: var(--color-bg-secondary);
-}
-
-#section-list li a:hover {
-    background-color: var(--color-bg-hover);
+    padding: 20px;
 }
 
 #section-list .date {
     font-family: "Ubuntu Mono";
     padding-bottom: 10px;
+}
+
+#section-tag {
+    padding: 20px;
+    max-width: 220px;
+}
+@media (max-width: 1080px) {
+    #section-tag {
+        max-width: 100%;
+    }
+}
+
+#tag-cloud-title {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.tag-item {
+    font-family: "Ubuntu Mono";
+    padding-right: 0.3em;
 }
 
 
@@ -52,12 +63,13 @@
 
 #post-header .wrapper {
     padding-top: 10vh;
-    padding-bottom: 20px;
+    padding-bottom: 5vh;
 }
 
 #post-header .post-title {
     font-size: 2em;
     font-weight: bold;
+    padding-top: 10px;
 }
 
 #post-header .post-date {

@@ -1,0 +1,38 @@
+<div class="flex-row">
+    <div class="f-row-left">
+  
+    </div>
+    <div class="f-row-middle">
+      <section id="section-list">
+        <ul>
+          {{ range .Data.Pages }}
+          <li class="tile flex-col z1">
+            <a class="stretched-link" href="{{ .RelPermalink }}"></a>
+            <div class="date"><small>{{ .Date.Format .Site.Params.date.format }}</small></div>
+            <div class="title"><h3>{{ .LinkTitle }}</h3></div>
+            <div class="summary">
+              <p>
+                {{ if .Description }}
+                  {{ .Description }}
+                {{ else }}
+                  {{ .Summary | truncate 180 }}
+                  {{ if .Truncated }}<span><small><b>[Read More]</b></small></span>{{ end }}
+                {{ end }}
+              </p>
+            </div>
+            {{ with .GetTerms "Tags" }}
+            <div class ="tags stretched-link-inner">
+              {{ range . }}<a class="tag-item z2" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>{{ end }}
+            </div>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </section>
+    </div>
+    <div class="f-row-right">
+      <section id="section-tag" class="sticky-top">
+        {{- partial "widgets/tag_cloud.html" . -}}
+      </section>
+    </div>
+  </div>

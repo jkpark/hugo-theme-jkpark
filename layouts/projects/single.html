@@ -1,0 +1,28 @@
+{{ define "main" }}
+<section class="post">
+  <header id="post-header" class="thm-dark">
+    <div class="wrapper">
+      <div>Project</div>
+      <div class="post-title">{{ .Params.Name }}</div>
+      <div>{{ .Params.oneliner | safeHTML }}</div>
+    </div>
+  </header>
+
+  <article id="post-article">
+    <div class="wrapper">
+      <img src="{{ .Params.image }}" class="project-image" alt="{{ .Params.name }}" onerror="this.style.display='none'" />
+      
+      <p>{{ .Params.description | safeHTML }}</p>
+
+      <p><strong>As {{ .Params.role | safeHTML }}</strong></p>
+      <p>Using {{ .Params.language | safeHTML }}</p>
+      <p>
+          <strong>Achievements</strong><br>
+          {{ range .Params.achievements }} - {{ . | safeHTML }}<br>{{ end }}
+      </p>
+
+      {{ .Content }}
+    </div>
+  </article>
+</section>
+{{ end }}

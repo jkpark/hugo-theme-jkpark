@@ -70,31 +70,13 @@ a:hover, a.selected {
 }
 
 
-/*                   */
-.wrapper {
-    width: 100%;
-    max-width: var(--max-width);
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-}
-.flex-col {
-    display: flex;
-    flex-direction: column;
-}
-
 /*      Masthead      */
 #masthead {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #masthead .wrapper {
     display: flex;
     flex-direction: row;
@@ -140,6 +122,9 @@ footer {
     height: 100%;
 }
 
+/*                  */
+
+
 
 /*                  */
 .aboutme {
@@ -154,15 +139,9 @@ footer {
     padding-bottom: 5vh;
 }
 
-.projects .project + .project {
-    border-top: 1px solid var(--color-border);
-}
-
 .project {
     display: block;
     overflow:auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .project-image {

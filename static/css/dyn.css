@@ -1,0 +1,107 @@
+/*                   */
+.wrapper {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.z1 {z-index: 1;}
+.z2 {z-index: 2;}
+.z3 {z-index: 3;}
+.z4 {z-index: 4;}
+.z5 {z-index: 5;}
+
+.flex {
+    display: flex;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-row-left {
+    flex: 1 0 0px;
+    min-width: 100px;
+}
+.f-row-middle {
+    flex: 0 1 var(--max-width);
+}
+.f-row-right {
+    flex: 1 0 0px;
+    min-width: 100px;
+}
+
+@media (max-width: 1080px) {
+    .flex-row  {
+        flex-direction: column;
+        width: var(--max-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .f-row-left {
+        order: 1;
+    }
+    .f-row-middle {
+        order: 3;
+    }
+    .f-row-right {
+        order: 2;
+    }
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.tile {
+    background-color: var(--color-bg);
+    position: relative;
+}
+
+.tile:hover {
+    background-color: var(--color-bg-hover);
+}
+
+a.stretched-link {
+    position:absolute;
+    left:0; top:0; bottom:0; right:0;
+}
+
+.stretched-link-inner {
+    position: relative;
+    pointer-events: none;
+    z-index: 2;
+}
+.stretched-link-inner a {
+    pointer-events: all;
+}
+
+.sticky-left {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    float: left;
+    left: 0;
+}
+
+.sticky-right {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    float: right;
+    right: 0;
+}
+
+.sticky-top {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+

@@ -3,7 +3,13 @@
   <header id="post-header" class="thm-dark">
     <div class="wrapper">
       <div class="post-date"><small>{{ .Date.Format .Site.Params.date.format }}</small></div>
+      {{ with .GetTerms "Tags" }}
+      <div class ="tags flex">
+        {{ range . }}<a class="tag-item z2" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>{{ end }}
+      </div>
+      {{ end }}
       <div class="post-title">{{ .Title }}</div>
+      
     </div>
   </header>
 

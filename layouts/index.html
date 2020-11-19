@@ -10,28 +10,28 @@
     </section>
     {{ end }}
     
-    {{ if .Site.Data.projects }}
+    {{ with .Site.GetPage "section" "projects" }}
     <section class="projects">
-        <div class="wrapper">
-            <header><h1>Projects</h1></header>
-            {{ range .Site.Data.projects.projects }}
-            <section class="project">
-                <img src="{{ .image }}" class="project-image" alt="{{ .name }}" onerror="this.style.display='none'" />
-                <div>
-                    <h1>{{ .name | safeHTML }}</h1>
-                    <p>{{ .oneliner | safeHTML }}</p>
-                    <p><strong>As {{ .role | safeHTML }}</strong></p>
-                    <p>{{ .description | truncate 300 | safeHTML }}</p>
+        <header class="wrapper"><h1>Projects</h1></header>
+        {{ range .Pages }}
+        <section class="project tile">
+            <div class="wrapper  flex z1">
+                <a class="stretched-link" href='{{ "/projects/" | relLangURL }}{{ .Params.identifier | urlize }}'></a>
+                <img src="{{ .Params.image }}" class="project-image" alt="{{ .Params.name }}" onerror="this.style.display='none'" />
+                <div class="stretched-link-inner">
+                    <h1>{{ .Params.name }}</h1>
+                    <p>{{ .Params.oneliner | safeHTML }}</p>
+                    <p><strong>As {{ .Params.role | safeHTML }}</strong></p>
+                    <p>{{ .Params.description | truncate 300 | safeHTML }}</p>
                     <p>
                         <strong>Achievements</strong><br>
-                        {{ range .achievements }}
-                            {{ . | safeHTML }}<br>
-                        {{ end }}
+                        {{ range .Params.achievements }} - {{ . | safeHTML }}<br>{{ end }}
                     </p>
                 </div>
-            </section>
-            {{ end }}
-        </div>
+            </div>
+        </section>
+        {{ end }}
     </section>
     {{ end }}
+
 {{ end }}
