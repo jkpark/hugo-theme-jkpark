@@ -5,7 +5,7 @@ date: 2020-11-01T12:20:07+09:00
 draft: false
 weight: 1
 image: "" # relative path of /static/images folder
-tags: [tag1, tag2, tag3, tag4, tag5, tag6, tag7, tag8]
+tags: [hugo]
 category: blog
 enableToc: true
 ---

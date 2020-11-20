@@ -5,7 +5,7 @@ date: 2020-11-11T20:16:45+09:00
 draft: false
 weight: 2
 image: "" # relative path of /static/images folder
-tags: [tag2, tag5]
+tags: [hugo, github pages]
 category: blog
 enableToc: true
 ---

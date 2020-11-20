@@ -11,7 +11,7 @@
                 {{ $current := . }}
                 {{ range .Site.Menus.main }}
                 <li>
-                    <a class='mh-item no-color-link {{ if or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}selected{{ end }}' href="{{ .URL | relLangURL }}">{{ safeHTML .Name }}</a>
+                    <a class='mh-item no-color-link {{ if or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}selected{{ end }}' href="{{ .URL }}">{{ safeHTML .Name }}</a>
                 </li>
                 {{ end }}
             </ul>
