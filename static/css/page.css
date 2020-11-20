@@ -28,7 +28,6 @@
 }
 
 #section-list .date {
-    font-family: "Ubuntu Mono";
     padding-bottom: 10px;
 }
 
@@ -36,7 +35,7 @@
     padding: 20px;
     max-width: 220px;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1040px) {
     #section-tag {
         max-width: 100%;
     }
@@ -51,7 +50,6 @@
 }
 
 .tag-item {
-    font-family: "Ubuntu Mono";
     padding-right: 0.3em;
 }
 
@@ -73,7 +71,6 @@
 }
 
 #post-header .post-date {
-    font-family: "Ubuntu Mono";
     padding-bottom: 10px;
 }
 

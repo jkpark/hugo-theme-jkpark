@@ -1,32 +1,16 @@
 ---
-title: Hello World2
-description: "this is second post's desciption"
+title: utteranc.es comments system
+description: "explain how to use utteranc.es comments system."
 date: 2020-11-11T20:16:45+09:00
 draft: false
 weight: 0
 image: "" # relative path of /static/images folder
-tags: [tag1, tag3]
+tags: [comments, utteranc.es]
 category: blog
 enableToc: true
 ---
 
-hello world2
-hello world2hello world2
-hello world2hello world2
-hello world2hello world2
-hello world2hello world2
-hello world2
 
-hello world2
-hello world2hello world2
-hello world2hello world2
-hello world2
+# utteranc.es
 
-hello world2
-hello world2hello world2
-hello world2
-hello world2
-hello world2
-
-hello world2
-hello world2
+utteranc.es is a lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!

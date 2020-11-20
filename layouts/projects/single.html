@@ -9,9 +9,10 @@
   </header>
 
   <article id="post-article">
-    <div class="wrapper">
-      <img src="{{ .Params.image }}" class="project-image" alt="{{ .Params.name }}" onerror="this.style.display='none'" />
-      
+    <div class="wrapper project">
+      <div class="project-image-container">
+        <img src='{{ .RelPermalink }}{{ "images/preview.png" | urlize }}' class="project-image" alt="{{ .Params.name }}" onerror="this.style.display='none'" />
+      </div>
       <p>{{ .Params.description | safeHTML }}</p>
 
       <p><strong>As {{ .Params.role | safeHTML }}</strong></p>
@@ -20,7 +21,8 @@
           <strong>Achievements</strong><br>
           {{ range .Params.achievements }} - {{ . | safeHTML }}<br>{{ end }}
       </p>
-
+    </div>
+    <div class="wrapper">
       {{ .Content }}
     </div>
   </article>

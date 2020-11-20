@@ -2,7 +2,7 @@
 <section class="post">
   <header id="post-header" class="thm-dark">
     <div class="wrapper">
-      <div class="post-date"><small>{{ .Date.Format .Site.Params.date.format }}</small></div>
+      <div class="post-date mono"><small>{{ .Date.Format .Site.Params.date.format }}</small></div>
       {{ with .GetTerms "Tags" }}
       <div class ="tags flex">
         {{ range . }}<a class="tag-item z2" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>{{ end }}
@@ -18,5 +18,11 @@
       {{ .Content }}
     </div>
   </article>
+
+  <section>
+    <div class="wrapper">
+      {{- partial "widgets/comments.html" . -}}
+    </div>
+  </section>
 </section>
 {{ end }}

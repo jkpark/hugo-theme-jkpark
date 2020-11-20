@@ -15,9 +15,11 @@
         <header class="wrapper"><h1>Projects</h1></header>
         {{ range .Pages }}
         <section class="project tile">
-            <div class="wrapper  flex z1">
+            <div class="wrapper">
                 <a class="stretched-link" href='{{ "/projects/" | relLangURL }}{{ .Params.identifier | urlize }}'></a>
-                <img src="{{ .Params.image }}" class="project-image" alt="{{ .Params.name }}" onerror="this.style.display='none'" />
+                <div class="project-image-container">
+                    <img src='{{ .RelPermalink }}{{ "images/preview.png" | urlize }}' class="project-image" alt="{{ .Params.name }}" onerror="this.style.display='none'" />
+                </div>
                 <div class="stretched-link-inner">
                     <h1>{{ .Params.name }}</h1>
                     <p>{{ .Params.oneliner | safeHTML }}</p>

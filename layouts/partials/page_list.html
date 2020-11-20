@@ -8,7 +8,7 @@
           {{ range .Data.Pages }}
           <li class="tile flex-col z1">
             <a class="stretched-link" href="{{ .RelPermalink }}"></a>
-            <div class="date"><small>{{ .Date.Format .Site.Params.date.format }}</small></div>
+            <div class="date mono"><small>{{ .Date.Format .Site.Params.date.format }}</small></div>
             <div class="title"><h3>{{ .LinkTitle }}</h3></div>
             <div class="summary">
               <p>
@@ -22,7 +22,7 @@
             </div>
             {{ with .GetTerms "Tags" }}
             <div class ="tags stretched-link-inner">
-              {{ range . }}<a class="tag-item z2" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>{{ end }}
+              {{ range . }}<a class="tag-item z2 mono" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>{{ end }}
             </div>
             {{ end }}
           </li>

@@ -1,7 +1,6 @@
 ---
 name: {{ replace .Name "-" " " | title }}
 identifier: {{ .Name }}
-image: 
 oneliner: one line descprtion
 role: a developer
 language : Java? C?

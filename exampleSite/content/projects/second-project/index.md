@@ -1,7 +1,6 @@
 ---
 name: Second Project
 identifier: second-project
-image: 
 oneliner: one line descprtion
 role: a developer
 language : Java? C?

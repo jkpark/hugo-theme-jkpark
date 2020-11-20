@@ -1,4 +1,77 @@
 /*                   */
+:root {
+    --max-width: 760px;
+}
+
+@media (max-width: 800px) {
+    :root {
+        --max-width: 95%;
+    }
+}
+
+.thm-light {
+    --color-bg: rgba(255, 255, 255);
+    --color-bg-secondary: rgb(245, 245, 245);
+    --color-bg-hover: rgb(240, 240, 240);
+    --color-text-primary: rgb(80, 80, 80);
+    --color-text-link:rgb(39, 91, 160);
+    --color-text-link-hover:rgb(0, 0, 0);
+    --color-border: rgb(200, 200, 200);
+    
+    color: var(--color-text-primary);
+    background-color: var(--color-bg);
+}
+
+.thm-dark {
+    --color-bg: rgb(26,26,26);
+    --color-bg-secondary: rgb(36, 36, 36);
+    --color-bg-hover: rgb(46, 46, 46);
+    --color-text-primary: rgb(221, 221, 221);
+    --color-text-link:rgb(140, 181, 235);
+    --color-text-link-hover:rgb(255, 255, 255);
+    --color-border: rgb(46, 46, 46);
+    
+    color: var(--color-text-primary);
+    background-color: var(--color-bg);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+main {
+}
+
+p {
+    margin: 0.5em 0;
+    line-height: 160%;
+}
+
+a:link,
+a:visited,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: var(--color-text-link);
+}
+
+a.no-color-link {
+    color: var(--color-text-primary);
+}
+
+a:hover, a.selected {
+    text-decoration: none;
+    color: var(--color-text-link-hover);
+}
+
+/*                   */
+
 .wrapper {
     width: 100%;
     max-width: var(--max-width);
@@ -38,7 +111,7 @@
     min-width: 100px;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1040px) {
     .flex-row  {
         flex-direction: column;
         width: var(--max-width);
@@ -104,4 +177,7 @@ a.stretched-link {
     top: 0;
 }
 
+.mono {
+    font-family: "Ubuntu Mono";
+}
 

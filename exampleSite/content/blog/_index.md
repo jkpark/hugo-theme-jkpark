@@ -9,4 +9,4 @@ type: pages
 
 this is my blog main page.
 
-[link color test](#)
+[link test](#)
