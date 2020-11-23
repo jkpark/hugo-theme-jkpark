@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github pages on jkpark Demo</title>
+    <link>http://example.org/tags/github-pages/</link>
+    <description>Recent content in github pages on jkpark Demo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Wed, 11 Nov 2020 20:16:45 +0900</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/github-pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hosting on GitHub Pages</title>
+      <link>http://example.org/blog/hosting-github-page/</link>
+      <pubDate>Wed, 11 Nov 2020 20:16:45 +0900</pubDate>
+      
+      <guid>http://example.org/blog/hosting-github-page/</guid>
+      <description>Create New Repository on the github *reffered https://gohugo.io/hosting-and-deployment/hosting-on-github/
+create new public Repository on github.
+in my case, I created repo for demo site.
+https://github.com/jkpark/hugo-theme-jkpark-demo.git
+import your hugo folder into github goto your hugo folder which we made from the previous post.
+cd demo git add . git commit -m &amp;quot;first commit&amp;quot; git branch -M main git remote add origin https://github.com/jkpark/hugo-theme-jkpark-demo.git git push -u origin main now, hugo server is placed in the your github repo.</description>
+    </item>
+    
+  </channel>
+</rss>

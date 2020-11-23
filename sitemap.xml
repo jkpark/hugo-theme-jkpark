@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/blog/get-started/</loc>
+    <lastmod>2020-11-01T12:20:07+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blog/hosting-github-page/</loc>
+    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blog/</loc>
+    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/comments/</loc>
+    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/github-pages/</loc>
+    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blog/create-new-project/</loc>
+    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/hugo/</loc>
+    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/project/</loc>
+    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/utteranc.es/</loc>
+    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blog/utteranc-es/</loc>
+    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/projects/first-project/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/projects/second-project/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/projects/</loc>
+  </url>
+  
+</urlset>

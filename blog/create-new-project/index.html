@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head><meta charset="UTF-8">
+
+<title>
+    How to Create New Project - jkpark Demo
+</title>
+
+<meta name="author" content="JK Park">
+<meta itemprop="description" name="description" content="explain how to create new project." />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="jkpark Demo">
+<meta property="og:title" content="How to Create New Project">
+<meta property="og:url" content="http://example.org/blog/create-new-project/">
+<meta property="og:type" content="article">
+
+
+<meta name="generator" content="Hugo 0.68.3" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Ubuntu+Mono|Roboto:400,700,300italic" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href='/css/site.css'>
+<link rel="stylesheet" href='/css/page.css'>
+<link rel="stylesheet" href='/css/dyn.css'></head>
+
+<body class="thm-dark"><header id="masthead" class="thm-dark z5">
+    <div class="wrapper">
+        <nav class="mh-menu">
+            <ul>
+                <li>
+                    <div class="mh-logo">
+                        <img class="avatar" src="https://avatars.githubusercontent.com/jkpark?size=36" alt="avatar" />
+                        <a href="/" class="text mh-item no-color-link">JK Park</a>
+                    </div>
+                </li>
+                
+                
+                <li>
+                    <a class='mh-item no-color-link ' href="/">About</a>
+                </li>
+                
+                <li>
+                    <a class='mh-item no-color-link ' href="/blog/">Blog</a>
+                </li>
+                
+                <li>
+                    <a class='mh-item no-color-link ' href="/docs/">Docs</a>
+                </li>
+                
+            </ul>
+        </nav>
+        <nav class="mh-settings">
+            <a class="mh-item no-color-link" href="#">Setting</a>
+        </nav>
+    </div>
+</header><main class="thm-light">
+<section class="post">
+  <header id="post-header" class="thm-dark">
+    <div class="wrapper">
+      <div class="post-date mono"><small>Nov 11, 2020</small></div>
+      
+      <div class ="tags flex">
+        <a class="tag-item z2" href="/tags/hugo/">#hugo</a><a class="tag-item z2" href="/tags/project/">#project</a>
+      </div>
+      
+      <div class="post-title">How to Create New Project</div>
+      
+    </div>
+  </header>
+
+  <article id="post-article">
+    <div class="wrapper">
+      <h1 id="create-hew-project">Create Hew project</h1>
+<p>you can create new project directory using <code>--kind project-bundle</code></p>
+<pre><code>archetypes
+└── project-bundle
+    ├── images
+    │   └── preview.png
+    └── index.md
+</code></pre><pre><code>$ hugo new --kind project-bundle projects/first-project
+</code></pre><p>Will create a new project in <code>/content/projects/first-project</code> with the same set of files as in the <code>project-bundle</code> archetypes folder.</p>
+<p>You can override <code>preview.png</code> to your preview image of project.</p>
+<p>each project will be displayed at the project section of the <a href="/">main page</a> and more contents at the <a href="/projects/first-project/">project page</a></p>
+
+    </div>
+  </article>
+
+  <section>
+    <div class="wrapper"><script src="https://utteranc.es/client.js"
+    repo="jkpark/jkpark.github.io-utterances"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script></div>
+  </section>
+</section>
+
+    </main><footer>
+    <p>
+        Powered by the <a href="https://github.com/jkpark/hugo-theme-jkpark" target="_blank">jkpark</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a>.
+    </p>
+</footer></body>
+
+</html>

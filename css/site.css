@@ -1,0 +1,84 @@
+/*      Masthead      */
+#masthead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#masthead .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.mh-item {
+    min-width: 30px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mh-logo {
+    display: flex;
+}
+
+.mh-logo .avatar {
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    padding: 7px;
+}
+
+.mh-menu ul, .mh-menu li{
+    display: flex;
+    list-style: none;
+}
+
+/*      Footer      */
+footer {
+    min-height: 50px;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-size: small;
+    height: 100%;
+}
+
+/*                  */
+
+
+
+/*                  */
+.aboutme {
+    background-color: var(--color-bg-secondary);
+    
+    padding-top: 10vh;
+    padding-bottom: 20px;
+}
+.projects {
+    background-color: var(--color-bg);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.project {
+    display: block;
+    overflow:auto;
+}
+
+.project-image-container {
+    position: relative;
+    float: right;
+    top: -20px;
+    margin-top: 20px;
+}
+
+.project-image {
+    max-width: 180px;
+}

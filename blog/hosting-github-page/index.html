@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head><meta charset="UTF-8">
+
+<title>
+    Hosting on GitHub Pages - jkpark Demo
+</title>
+
+<meta name="author" content="JK Park">
+<meta itemprop="description" name="description" content="" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="jkpark Demo">
+<meta property="og:title" content="Hosting on GitHub Pages">
+<meta property="og:url" content="http://example.org/blog/hosting-github-page/">
+<meta property="og:type" content="article">
+
+
+<meta name="generator" content="Hugo 0.68.3" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Ubuntu+Mono|Roboto:400,700,300italic" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href='/css/site.css'>
+<link rel="stylesheet" href='/css/page.css'>
+<link rel="stylesheet" href='/css/dyn.css'></head>
+
+<body class="thm-dark"><header id="masthead" class="thm-dark z5">
+    <div class="wrapper">
+        <nav class="mh-menu">
+            <ul>
+                <li>
+                    <div class="mh-logo">
+                        <img class="avatar" src="https://avatars.githubusercontent.com/jkpark?size=36" alt="avatar" />
+                        <a href="/" class="text mh-item no-color-link">JK Park</a>
+                    </div>
+                </li>
+                
+                
+                <li>
+                    <a class='mh-item no-color-link ' href="/">About</a>
+                </li>
+                
+                <li>
+                    <a class='mh-item no-color-link ' href="/blog/">Blog</a>
+                </li>
+                
+                <li>
+                    <a class='mh-item no-color-link ' href="/docs/">Docs</a>
+                </li>
+                
+            </ul>
+        </nav>
+        <nav class="mh-settings">
+            <a class="mh-item no-color-link" href="#">Setting</a>
+        </nav>
+    </div>
+</header><main class="thm-light">
+<section class="post">
+  <header id="post-header" class="thm-dark">
+    <div class="wrapper">
+      <div class="post-date mono"><small>Nov 11, 2020</small></div>
+      
+      <div class ="tags flex">
+        <a class="tag-item z2" href="/tags/github-pages/">#github pages</a><a class="tag-item z2" href="/tags/hugo/">#hugo</a>
+      </div>
+      
+      <div class="post-title">Hosting on GitHub Pages</div>
+      
+    </div>
+  </header>
+
+  <article id="post-article">
+    <div class="wrapper">
+      <h1 id="create-new-repository-on-the-github">Create New Repository on the github</h1>
+<p>*reffered <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a></p>
+<p>create new public Repository on <a href="https://github.com/">github</a>.</p>
+<p>in my case, I created repo for demo site.</p>
+<p><a href="https://github.com/jkpark/hugo-theme-jkpark-demo.git">https://github.com/jkpark/hugo-theme-jkpark-demo.git</a></p>
+<h1 id="import-your-hugo-folder-into-github">import your hugo folder into github</h1>
+<p>goto your hugo folder which we made from the previous post.</p>
+<pre><code>cd demo
+</code></pre><pre><code>git add .
+git commit -m &quot;first commit&quot;
+git branch -M main
+git remote add origin https://github.com/jkpark/hugo-theme-jkpark-demo.git
+git push -u origin main
+</code></pre><p>now, hugo server is placed in the your github repo.</p>
+<h1 id="deployment-of-hugo-server-from-github-pages">Deployment of hugo server from github pages.</h1>
+<p>There are 2 types of GitHub Pages:</p>
+<ul>
+<li>User/Organization Pages (https://&lt;USERNAME|ORGANIZATION&gt;.github.io/)</li>
+<li>Project Pages (https://&lt;USERNAME|ORGANIZATION&gt;.github.io/<PROJECT>/)</li>
+</ul>
+<h2 id="userorganization-pages">User/Organization Pages</h2>
+<h2 id="project-pages">Project Pages</h2>
+<p>You can also tell GitHub pages to treat your main branch as the published site or point to a separate gh-pages branch. The latter approach is a bit more complex but has some advantages:</p>
+<ul>
+<li>It keeps your source and generated website in different branches and therefore maintains version control history for both.</li>
+<li>Unlike the preceding docs/ option, it uses the default public folder.</li>
+</ul>
+<h1 id="gitignore-fublic-folder">gitignore fublic folder</h1>
+<p>First, add the public folder to your .gitignore file at the project root so that the directory is ignored on the main branch</p>
+<pre><code>echo &quot;public&quot; &gt;&gt; .gitignore
+</code></pre><h1 id="init-gh-pages-branch">init <code>gh-pages</code> branch</h1>
+<pre><code>git checkout --orphan gh-pages
+git reset --hard
+git commit --allow-empty -m &quot;Initializing gh-pages branch&quot;
+git push origin gh-pages
+git checkout main
+</code></pre><h1 id="rebuild-and-deployment">Rebuild and Deployment</h1>
+<pre><code>rm -rf public
+git worktree add -B gh-pages public upstream/gh-pages
+</code></pre><pre><code>hugo
+cd public &amp;&amp; git add --all &amp;&amp; git commit -m &quot;Publishing to gh-pages&quot; &amp;&amp; cd ..
+git push upstream gh-pages
+</code></pre><h1 id="set-gh-pages-as-your-publish-branch">Set <code>gh-pages</code> as your publish branch</h1>
+<p>In order to use your gh-pages branch as your publishing branch, you’ll need to configure the repository within the GitHub UI. This will likely happen automatically once GitHub realizes you’ve created this branch. You can also set the branch manually from within your GitHub project:</p>
+<ol>
+<li>Go to Settings → GitHub Pages</li>
+<li>From Source, select “gh-pages branch” and then Save. If the option isn’t enabled, you likely have not created the branch yet OR you have not pushed the branch from your local machine to the hosted repository on GitHub.
+After a short while, you’ll see the updated contents on your GitHub Pages site.</li>
+</ol>
+
+    </div>
+  </article>
+
+  <section>
+    <div class="wrapper"><script src="https://utteranc.es/client.js"
+    repo="jkpark/jkpark.github.io-utterances"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script></div>
+  </section>
+</section>
+
+    </main><footer>
+    <p>
+        Powered by the <a href="https://github.com/jkpark/hugo-theme-jkpark" target="_blank">jkpark</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a>.
+    </p>
+</footer></body>
+
+</html>
