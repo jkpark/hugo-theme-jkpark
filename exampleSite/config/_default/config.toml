@@ -2,7 +2,7 @@
 ##### Customizable variables #####
 
 # Your website URL (e.g. http://jkpark.github.io)
-baseURL = "http://example.org"
+baseURL = "https://jkpark.github.io/hugo-theme-jkpark/"
 
 title = "jkpark Demo"
 
