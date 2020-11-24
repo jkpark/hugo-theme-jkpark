@@ -1,3 +1,58 @@
+/*                   */
+:root {
+    --max-width: 760px;
+}
+
+@media (max-width: 800px) {
+    :root {
+        --max-width: 95%;
+    }
+}
+
+.thm-light {
+    --color-bg: rgba(255, 255, 255);
+    --color-bg-secondary: rgb(245, 245, 245);
+    --color-bg-hover: rgb(240, 240, 240);
+    --color-text-primary: rgb(80, 80, 80);
+    --color-text-link:rgb(39, 91, 160);
+    --color-text-link-hover:rgb(0, 0, 0);
+    --color-border: rgb(200, 200, 200);
+    
+    color: var(--color-text-primary);
+    background-color: var(--color-bg);
+}
+
+.thm-dark {
+    --color-bg: rgb(26,26,26);
+    --color-bg-secondary: rgb(36, 36, 36);
+    --color-bg-hover: rgb(46, 46, 46);
+    --color-text-primary: rgb(221, 221, 221);
+    --color-text-link:rgb(140, 181, 235);
+    --color-text-link-hover:rgb(255, 255, 255);
+    --color-border: rgb(46, 46, 46);
+    
+    color: var(--color-text-primary);
+    background-color: var(--color-bg);
+}
+
+
+a:link,
+a:visited,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: var(--color-text-link);
+}
+
+a.no-color-link {
+    color: var(--color-text-primary);
+}
+
+a:hover, a.selected {
+    text-decoration: none;
+    color: var(--color-text-link-hover);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +60,7 @@
 
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu';
     text-rendering: optimizeLegibility;
 }
 
@@ -16,35 +71,6 @@ p {
     margin: 0.5em 0;
     line-height: 160%;
 }
-
-h1, h2, h3, h4, h5 {
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-}
-
-h1 {
-    margin-top: 2em;
-    margin-bottom: 1em;
-    font-size: 1.5em;
-}
-h2 {
-    font-size: 1.2em;
-}
-h3 {
-    font-size: 1em;
-}
-h4 {
-    font-size: 1em;
-    font-style: italic;
-    padding-left: 1em;
-}
-h5 {
-    font-size: 0.8em;
-    font-style: italic;
-    padding-left: 2em;
-    color: #999;
-}
-
 
 
 /*      Masthead      */

@@ -10,3 +10,5 @@ type: pages
 this is my blog main page.
 
 [link test](#)
+
+한글 테스트.
