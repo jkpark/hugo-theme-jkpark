@@ -13,16 +13,26 @@
     </div>
   </header>
 
-  <article id="post-article">
-    <div class="wrapper">
-      {{ .Content }}
+  <div class="flex-row">
+    <div class="f-row-left">
+  
     </div>
-  </article>
+    <div class="f-row-middle">
+      <article id="post-article">
+          {{ .Content }}
+      </article>
+      <div style="margin-top: 10vh;"></div>
+      <section>
+          {{- partial "widgets/comments.html" . -}}
+      </section>
 
-  <section>
-    <div class="wrapper">
-      {{- partial "widgets/comments.html" . -}}
     </div>
-  </section>
+    <div class="f-row-right">
+      <section id="section-toc" class="sticky-top">
+        {{- partial "widgets/toc.html" . -}}
+      </section>
+    </div>
+  </div>
+  
 </section>
 {{ end }}

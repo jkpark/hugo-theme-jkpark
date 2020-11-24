@@ -35,23 +35,6 @@
     background-color: var(--color-bg);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Ubuntu', sans-serif;
-    text-rendering: optimizeLegibility;
-}
-
-main {
-}
-
-p {
-    margin: 0.5em 0;
-    line-height: 160%;
-}
 
 a:link,
 a:visited,

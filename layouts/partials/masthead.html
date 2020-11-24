@@ -5,7 +5,7 @@
                 <li>
                     <div class="mh-logo">
                         <img class="avatar" src="{{ .Site.Params.Author.avatar }}" alt="avatar" />
-                        <a href="/" class="text mh-item no-color-link">{{ .Site.Params.Author.name }}</a>
+                        <a href="{{ .Params.BaseURL }}" class="text mh-item no-color-link">{{ .Site.Params.Author.name }}</a>
                     </div>
                 </li>
                 {{ $current := . }}
