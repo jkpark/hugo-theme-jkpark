@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on jkpark Demo</title>
-    <link>http://example.org/projects/</link>
+    <link>https://jkpark.github.io/hugo-theme-jkpark/projects/</link>
     <description>Recent content in Projects on jkpark Demo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     
-	<atom:link href="http://example.org/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jkpark.github.io/hugo-theme-jkpark/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://example.org/projects/first-project/</link>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/projects/first-project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/projects/first-project/</guid>
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/projects/first-project/</guid>
       <description>More contents here</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/projects/second-project/</link>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/projects/second-project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/projects/second-project/</guid>
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/projects/second-project/</guid>
       <description>More contents here</description>
     </item>
     

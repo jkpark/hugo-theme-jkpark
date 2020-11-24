@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jkpark Demo</title>
-    <link>http://example.org/</link>
+    <link>https://jkpark.github.io/hugo-theme-jkpark/</link>
     <description>Recent content on jkpark Demo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <lastBuildDate>Wed, 11 Nov 2020 20:16:45 +0900</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jkpark.github.io/hugo-theme-jkpark/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Get Started</title>
-      <link>http://example.org/blog/get-started/</link>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/blog/get-started/</link>
       <pubDate>Sun, 01 Nov 2020 12:20:07 +0900</pubDate>
       
-      <guid>http://example.org/blog/get-started/</guid>
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/blog/get-started/</guid>
       <description>Create a New Site hugo new site demo The above will create a new Hugo site in a folder named demo.
 Add Theme cd demo git init git submodule add https://github.com/jkpark/hugo-theme-jkpark.git themes/jkpark Take a look inside the exampleSite folder of this theme.
 themes/jkpark/exampleSite ├── content # some example contents for demo site. ├── data └── aboutme.yaml └── config └── _default ├── config.toml ├── menus.toml └── parems.toml remove unnessasory defaults files and folders.</description>
@@ -24,10 +24,10 @@ themes/jkpark/exampleSite ├── content # some example contents for demo sit
     
     <item>
       <title>Hosting on GitHub Pages</title>
-      <link>http://example.org/blog/hosting-github-page/</link>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/blog/hosting-github-page/</link>
       <pubDate>Wed, 11 Nov 2020 20:16:45 +0900</pubDate>
       
-      <guid>http://example.org/blog/hosting-github-page/</guid>
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/blog/hosting-github-page/</guid>
       <description>Create New Repository on the github *reffered https://gohugo.io/hosting-and-deployment/hosting-on-github/
 create new public Repository on github.
 in my case, I created repo for demo site.
@@ -38,10 +38,10 @@ cd demo git add . git commit -m &amp;quot;first commit&amp;quot; git branch -M m
     
     <item>
       <title>How to Create New Project</title>
-      <link>http://example.org/blog/create-new-project/</link>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/blog/create-new-project/</link>
       <pubDate>Wed, 11 Nov 2020 20:16:45 +0900</pubDate>
       
-      <guid>http://example.org/blog/create-new-project/</guid>
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/blog/create-new-project/</guid>
       <description>Create Hew project you can create new project directory using --kind project-bundle
 archetypes └── project-bundle ├── images │ └── preview.png └── index.md $ hugo new --kind project-bundle projects/first-project Will create a new project in /content/projects/first-project with the same set of files as in the project-bundle archetypes folder.
 You can override preview.png to your preview image of project.
@@ -50,28 +50,28 @@ each project will be displayed at the project section of the main page and more 
     
     <item>
       <title>utteranc.es comments system</title>
-      <link>http://example.org/blog/utteranc-es/</link>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/blog/utteranc-es/</link>
       <pubDate>Wed, 11 Nov 2020 20:16:45 +0900</pubDate>
       
-      <guid>http://example.org/blog/utteranc-es/</guid>
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/blog/utteranc-es/</guid>
       <description>utteranc.es utteranc.es is a lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/projects/first-project/</link>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/projects/first-project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/projects/first-project/</guid>
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/projects/first-project/</guid>
       <description>More contents here</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/projects/second-project/</link>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/projects/second-project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/projects/second-project/</guid>
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/projects/second-project/</guid>
       <description>More contents here</description>
     </item>
     

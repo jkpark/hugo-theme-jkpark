@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on jkpark Demo</title>
-    <link>http://example.org/tags/</link>
+    <link>https://jkpark.github.io/hugo-theme-jkpark/tags/</link>
     <description>Recent content in Tags on jkpark Demo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
     <lastBuildDate>Wed, 11 Nov 2020 20:16:45 +0900</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jkpark.github.io/hugo-theme-jkpark/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>comments</title>
-      <link>http://example.org/tags/comments/</link>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/tags/comments/</link>
       <pubDate>Wed, 11 Nov 2020 20:16:45 +0900</pubDate>
       
-      <guid>http://example.org/tags/comments/</guid>
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/tags/comments/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github pages</title>
-      <link>http://example.org/tags/github-pages/</link>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/tags/github-pages/</link>
       <pubDate>Wed, 11 Nov 2020 20:16:45 +0900</pubDate>
       
-      <guid>http://example.org/tags/github-pages/</guid>
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/tags/github-pages/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>http://example.org/tags/hugo/</link>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/tags/hugo/</link>
       <pubDate>Wed, 11 Nov 2020 20:16:45 +0900</pubDate>
       
-      <guid>http://example.org/tags/hugo/</guid>
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>project</title>
-      <link>http://example.org/tags/project/</link>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/tags/project/</link>
       <pubDate>Wed, 11 Nov 2020 20:16:45 +0900</pubDate>
       
-      <guid>http://example.org/tags/project/</guid>
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/tags/project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>utteranc.es</title>
-      <link>http://example.org/tags/utteranc.es/</link>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/tags/utteranc.es/</link>
       <pubDate>Wed, 11 Nov 2020 20:16:45 +0900</pubDate>
       
-      <guid>http://example.org/tags/utteranc.es/</guid>
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/tags/utteranc.es/</guid>
       <description></description>
     </item>
     

@@ -3,79 +3,79 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/blog/get-started/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/blog/get-started/</loc>
     <lastmod>2020-11-01T12:20:07+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/blog/hosting-github-page/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/blog/hosting-github-page/</loc>
     <lastmod>2020-11-11T20:16:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/blog/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/blog/</loc>
     <lastmod>2020-11-11T20:16:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/comments/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/tags/comments/</loc>
     <lastmod>2020-11-11T20:16:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/github-pages/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/tags/github-pages/</loc>
     <lastmod>2020-11-11T20:16:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/blog/create-new-project/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/blog/create-new-project/</loc>
     <lastmod>2020-11-11T20:16:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/hugo/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/tags/hugo/</loc>
     <lastmod>2020-11-11T20:16:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/</loc>
     <lastmod>2020-11-11T20:16:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/project/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/tags/project/</loc>
     <lastmod>2020-11-11T20:16:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/tags/</loc>
     <lastmod>2020-11-11T20:16:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/utteranc.es/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/tags/utteranc.es/</loc>
     <lastmod>2020-11-11T20:16:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/blog/utteranc-es/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/blog/utteranc-es/</loc>
     <lastmod>2020-11-11T20:16:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/projects/first-project/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/projects/first-project/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/projects/second-project/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/projects/second-project/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/projects/</loc>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/projects/</loc>
   </url>
   
 </urlset>
