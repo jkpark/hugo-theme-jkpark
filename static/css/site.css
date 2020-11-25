@@ -119,10 +119,6 @@ p {
 
 /*    Main-Header    */
 #main-header {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    width: 100%;
     z-index: 10;
 }
 
@@ -137,19 +133,19 @@ p {
     transition: all .5s;
 }
 
-#main-header.scroll {
+#main-header.sticky-top.scroll {
     top: 0;
     border-bottom: 1px solid var(--color-border);
 }
-#main-header.scroll .wrapper{
+#main-header.sticky-top.scroll .wrapper{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-#main-header.scroll .wrapper > * {
+#main-header.sticky-top.scroll .wrapper > * {
     display: none;
 }
 
-#main-header.scroll .title {
+#main-header.sticky-top.scroll .title {
     font-size: 1em;
     display: block;
 }

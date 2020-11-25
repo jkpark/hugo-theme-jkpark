@@ -24,6 +24,14 @@
 
         let ticking = false;
         window.addEventListener('load', function(e) {
+            var limit = document.body.offsetHeight - window.innerHeight;
+            console.log("window.innerHeight " + window.innerHeight)
+            console.log("document.body.offsetHeight " + document.body.offsetHeight)
+            console.log("limit " + limit)
+            console.log("mh.offsetHeight " + mh.offsetHeight)
+            if(mh.offsetHeight < limit) {
+                mh.classList.add("sticky-top");
+            }
             onScroll();
             document.querySelector("body").classList.remove("preload");
         });

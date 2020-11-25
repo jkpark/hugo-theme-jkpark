@@ -27,10 +27,11 @@
         max-width: 100%;
     }
 }
-
+/*          toc                        */
 #section-toc {
     padding: 20px;
     max-width: 220px;
+    width: 100%;
 }
 
 #toc-header {
@@ -57,17 +58,21 @@
     padding-right: 0.3em;
 }
 
-/*          navigation                   */
-#docs-nav {
+/*          pagetree                   */
+#section-pagetree {
     padding: 20px;
-    max-width: 320px;
+    max-width: 300px;
     width: 100%;
 }
-.page-nav {
+
+.pt-item {
+    padding: 10px;
 }
 
-.nav-item {
-    padding: 10px;
+.toc-list li {
+    margin: 12px 0px 12px 1em;
+    list-style: none;
+    font-size: small;
 }
 
 
