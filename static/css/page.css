@@ -1,14 +1,4 @@
-#section-content .wrapper {
-    padding-top: 10vh;
-    padding-bottom: 20px;
-}
 
-#section-title {
-    font-size: 2em;
-}
-
-#section-article {
-}
 
 #section-list {
     padding-top: 20px;
@@ -67,25 +57,21 @@
     padding-right: 0.3em;
 }
 
+/*          navigation                   */
+#docs-nav {
+    padding: 20px;
+    max-width: 320px;
+    width: 100%;
+}
+.page-nav {
+}
+
+.nav-item {
+    padding: 10px;
+}
+
+
 /*                                       */
-#post-header {
-    
-}
-
-#post-header .wrapper {
-    padding-top: 10vh;
-    padding-bottom: 5vh;
-}
-
-#post-header .post-title {
-    font-size: 2em;
-    font-weight: bold;
-    padding-top: 10px;
-}
-
-#post-header .post-date {
-    padding-bottom: 10px;
-}
 
 #post-article {
 }

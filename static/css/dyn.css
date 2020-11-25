@@ -30,6 +30,8 @@
 .f-row-left {
     flex: 1 0 0px;
     min-width: 100px;
+    display: flex;
+    justify-content: flex-end;
 }
 .f-row-middle {
     flex: 0 1 var(--max-width);
@@ -37,6 +39,8 @@
 .f-row-right {
     flex: 1 0 0px;
     min-width: 100px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 @media (max-width: 1040px) {
@@ -49,6 +53,7 @@
 
     .f-row-left {
         order: 1;
+        justify-content: flex-start;
     }
     .f-row-middle {
         order: 3;
@@ -60,6 +65,10 @@
 
 .f-wrap {
     flex-wrap: wrap;
+}
+
+.f-space-between {
+    justify-content: space-between;
 }
 
 .tile {

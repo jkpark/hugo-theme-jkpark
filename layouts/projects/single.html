@@ -1,13 +1,23 @@
 {{ define "main" }}
-<section class="post">
-  <header id="post-header" class="thm-dark">
-    <div class="wrapper">
-      <div>Project</div>
-      <div class="post-title">{{ .Params.Name }}</div>
-      <div>{{ .Params.oneliner | safeHTML }}</div>
-    </div>
-  </header>
+<section id="main-header" class="thm-dark">
+  {{ template "main-header" . }}
+</section>
+<section id="main-content">
+  {{ template "main-content" . }}
+</section>
+{{ end }}
 
+
+
+{{ define "main-header" }}
+<div class="wrapper">
+  <div>Project</div>
+  <div class="title">{{ .Params.Name }}</div>
+  <div>{{ .Params.oneliner | safeHTML }}</div>
+</div>
+{{ end }}
+
+{{ define "main-content" }}
   <article id="post-article">
     <div class="wrapper project">
       <div class="project-image-container">

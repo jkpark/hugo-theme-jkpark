@@ -4,12 +4,41 @@
     {{- partial "head.html" . -}}
 </head>
 
-<body class="thm-dark">
+<body class="thm-dark preload">
     {{- partial "masthead.html" . -}}
 
     <main class="thm-light">
-    {{- block "main" . }}{{- end }}
+        {{- block "main" . }}{{- end }}
     </main>
+
+    <script>
+        var mh = document.querySelector("#main-header");
+
+        function onScroll() {
+            if (window.scrollY > 1) {
+                mh.classList.add("scroll");
+            } else {
+                mh.classList.remove("scroll");
+            }
+        }
+
+        let ticking = false;
+        window.addEventListener('load', function(e) {
+            onScroll();
+            document.querySelector("body").classList.remove("preload");
+        });
+
+        window.addEventListener('scroll', function(e) {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    onScroll();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+    </script>
 
     {{- partial "footer.html" . -}}
 </body>

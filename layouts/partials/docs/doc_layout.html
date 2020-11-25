@@ -1,44 +1,39 @@
-{{ define "main" }}
+
 <section id="main-header" class="thm-dark">
   {{ template "main-header" . }}
 </section>
 <section id="main-content">
   {{ template "main-content" . }}
 </section>
-{{ end }}
+
 
 {{ define "main-header" }}
-<div class="wrapper">
-  {{ if .Date }}
-  <div class="date mono"><small>{{ .Date.Format .Site.Params.date.format }}</small></div>
-  {{ end }}
-  {{ with .GetTerms "Tags" }}
-  <div class ="tags flex">
-    {{ range . }}<a class="tag-item z2 mono" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>{{ end }}
+  <div class="wrapper">
+    <div class="title">
+      {{ .Title }}
+    </div>
   </div>
-  {{ end }}
-  <div class="title post-title">{{ .Title }}</div>
-</div>
 {{ end }}
 
 {{ define "main-content" }}
 <div class="flex-row">
   <div class="f-row-left">
-
+    <section id="docs-nav" class="sticky-top">
+    {{- partial "widgets/navigation.html" . -}}
+  </section>
   </div>
   <div class="f-row-middle">
     <article id="post-article" class="content">
-        {{ .Content }}
+      {{ .Content }}
     </article>
     <div style="margin-top: 10vh;"></div>
     <section>
         {{- partial "widgets/comments.html" . -}}
     </section>
-
   </div>
   <div class="f-row-right">
     <section id="section-toc" class="sticky-top">
-      {{- partial "widgets/toc.html" . -}}
+    {{- partial "widgets/toc.html" . -}}
     </section>
   </div>
 </div>

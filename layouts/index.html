@@ -1,4 +1,12 @@
 {{ define "main" }}
+<section id="main-header" class="thm-dark">
+</section>
+<section id="main-content">
+  {{ template "main-content" . }}
+</section>
+{{ end }}
+
+{{ define "main-content" }}
     {{ if .Site.Data.aboutme }}
     <section class="aboutme">
         <div class="wrapper">
