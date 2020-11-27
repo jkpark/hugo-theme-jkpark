@@ -6,10 +6,22 @@
     <description>Recent content in Docs on jkpark Demo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 24 Nov 2020 15:44:55 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2020 17:00:46 +0900</lastBuildDate>
     
 	<atom:link href="https://jkpark.github.io/hugo-theme-jkpark/docs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hosting on GitHub Pages</title>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/docs/hosting-github-page/</link>
+      <pubDate>Fri, 27 Nov 2020 14:16:45 +0900</pubDate>
+      
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/docs/hosting-github-page/</guid>
+      <description>Create New Repository on the github Go github and create new public Repository.
+import your hugo folder into github goto your hugo folder which we made from the previous post.
+cd demo git add . git commit -m &amp;quot;first commit&amp;quot; git branch -M main git remote add origin https://github.com/&amp;lt;your repo&amp;gt; git push -u origin main now, hugo server is placed in the your github repo.
+Deployment of hugo server from github pages.</description>
+    </item>
     
   </channel>
 </rss>

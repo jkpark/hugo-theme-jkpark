@@ -3,7 +3,7 @@
 <head><meta charset="UTF-8">
 
 <title>
-    Docs - jkpark Demo
+    Installation - jkpark Demo
 </title>
 
 <meta name="author" content="JK Park">
@@ -11,9 +11,9 @@
 <meta name="keywords" content="">
 
 <meta property="og:site_name" content="jkpark Demo">
-<meta property="og:title" content="Docs">
-<meta property="og:url" content="https://jkpark.github.io/hugo-theme-jkpark/docs/">
-<meta property="og:type" content="website">
+<meta property="og:title" content="Installation">
+<meta property="og:url" content="https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/installation/">
+<meta property="og:type" content="article">
 
 
 <meta name="generator" content="Hugo 0.68.3" />
@@ -52,7 +52,7 @@
                 </li>
                 
                 <li>
-                    <a class='mh-item no-color-link selected' href="/hugo-theme-jkpark/docs/">Docs</a>
+                    <a class='mh-item no-color-link ' href="/hugo-theme-jkpark/docs/">Docs</a>
                 </li>
                 
             </ul>
@@ -67,7 +67,7 @@
   
   <div class="wrapper">
     <div class="title">
-      Docs
+      Installation
     </div>
   </div>
 
@@ -537,12 +537,53 @@
 </header>
 
 <div class="toc-list">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-a-new-site">Create a New Site</a></li>
+    <li><a href="#install-jkpark-theme-as-git-submodule">Install <code>jkpark</code> theme as git submodule</a>
+      <ul>
+        <li><a href="#remove-unnessasory-defaults-files-and-folders">remove unnessasory defaults files and folders.</a></li>
+        <li><a href="#move-config-folder">move config folder</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-first-content">Create first content</a></li>
+    <li><a href="#start-the-hugo-server">Start the Hugo server</a></li>
+  </ul>
+</nav>
 </div>
 </section></sidebar>
 <div class="wrapper">
   <article id="post-article" class="content">
-    <p>test</p>
+    <h1 id="create-a-new-site">Create a New Site</h1>
+<pre><code>hugo new site demo
+</code></pre><p>The above will create a new Hugo site in a folder named <code>demo</code>.</p>
+<h1 id="install-jkpark-theme-as-git-submodule">Install <code>jkpark</code> theme as git submodule</h1>
+<pre><code>cd demo
+git init
+git submodule add https://github.com/jkpark/hugo-theme-jkpark.git themes/jkpark
+</code></pre><p>Take a look inside the <code>exampleSite</code> folder of this theme.</p>
+<pre><code>themes/jkpark/exampleSite
+├── content  # some example contents for demo site.
+├── data
+    └── aboutme.yaml
+└── config
+    └── _default
+        ├── config.toml
+        ├── menus.toml
+        └── parems.toml
+</code></pre><h2 id="remove-unnessasory-defaults-files-and-folders">remove unnessasory defaults files and folders.</h2>
+<pre><code>rm -rf archetypes
+rm config.toml
+</code></pre><p>When you remove <code>archetypes</code> folder, hugo will searches for the layout to use for a given page.</p>
+<p>More informations about lookup order, <a href="https://gohugo.io/templates/lookup-order/">https://gohugo.io/templates/lookup-order/</a></p>
+<h2 id="move-config-folder">move config folder</h2>
+<p>To use this theme, copy the <code>config</code> folder in the root folder of your hugo site.</p>
+<pre><code>cp -r themes/jkpark/exampleSite/config .
+</code></pre><h1 id="create-first-content">Create first content</h1>
+<pre><code>hugo new blog/my-first-post.md
+</code></pre><h1 id="start-the-hugo-server">Start the Hugo server</h1>
+<pre><code>hugo server
+</code></pre><p>Navigate to your new site at http://localhost:1313/.</p>
 
   </article>
   <div style="margin-top: 5vh;"></div>

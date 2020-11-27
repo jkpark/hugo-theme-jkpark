@@ -3,73 +3,88 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/article2/</loc>
-    <lastmod>2020-11-24T14:29:15+09:00</lastmod>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/</loc>
+    <lastmod>2020-11-27T15:48:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/blog/get-started/</loc>
-    <lastmod>2020-11-01T12:20:07+09:00</lastmod>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/installation/</loc>
+    <lastmod>2020-11-27T13:41:23+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/blog/hosting-github-page/</loc>
-    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/data-and-content/</loc>
+    <lastmod>2020-11-27T16:48:40+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/group3-1/article/</loc>
-    <lastmod>2020-11-24T15:44:55+09:00</lastmod>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/data-and-content/about/project/</loc>
+    <lastmod>2020-11-27T16:48:40+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/</loc>
-    <lastmod>2020-11-24T15:44:55+09:00</lastmod>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/configuration/</loc>
+    <lastmod>2020-11-27T15:48:51+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/group3-1/</loc>
-    <lastmod>2020-11-24T15:44:55+09:00</lastmod>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/hosting-github-page/</loc>
+    <lastmod>2020-11-27T14:16:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/examples/</loc>
+    <lastmod>2020-11-27T17:00:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/examples/pagetree/always/</loc>
+    <lastmod>2020-11-27T17:00:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/examples/pagetree/hide/</loc>
+    <lastmod>2020-11-27T17:00:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/examples/pagetree/show/</loc>
+    <lastmod>2020-11-27T17:00:46+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/</loc>
-    <lastmod>2020-11-24T15:44:55+09:00</lastmod>
+    <lastmod>2020-11-27T17:00:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/examples/pagetree/always/empty-page/</loc>
+    <lastmod>2020-11-27T17:00:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/examples/pagetree/hide/empty-page/</loc>
+    <lastmod>2020-11-27T17:00:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/examples/pagetree/show/empty-page/</loc>
+    <lastmod>2020-11-27T17:00:46+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://jkpark.github.io/hugo-theme-jkpark/</loc>
-    <lastmod>2020-11-24T15:44:55+09:00</lastmod>
+    <lastmod>2020-11-27T17:00:46+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/article/</loc>
-    <lastmod>2020-11-24T14:29:15+09:00</lastmod>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/examples/pagetree/</loc>
+    <lastmod>2020-11-27T17:00:46+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/group2/article-copy/</loc>
-    <lastmod>2020-11-24T14:29:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/group2/article/</loc>
-    <lastmod>2020-11-24T14:29:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/group2/</loc>
-    <lastmod>2020-11-24T14:29:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/group1/article/</loc>
-    <lastmod>2020-11-24T14:29:13+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/group1/</loc>
-    <lastmod>2020-11-24T14:29:13+09:00</lastmod>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/data-and-content/about/</loc>
+    <lastmod>2020-11-27T16:48:40+09:00</lastmod>
   </url>
   
   <url>
@@ -83,22 +98,7 @@
   </url>
   
   <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/tags/github-pages/</loc>
-    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/blog/create-new-project/</loc>
-    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jkpark.github.io/hugo-theme-jkpark/tags/hugo/</loc>
-    <lastmod>2020-11-11T20:16:45+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jkpark.github.io/hugo-theme-jkpark/tags/project/</loc>
     <lastmod>2020-11-11T20:16:45+09:00</lastmod>
   </url>
   
@@ -126,7 +126,15 @@
   </url>
   
   <url>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/data-and-content/blog/</loc>
+  </url>
+  
+  <url>
     <loc>https://jkpark.github.io/hugo-theme-jkpark/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://jkpark.github.io/hugo-theme-jkpark/docs/data-and-content/docs/</loc>
   </url>
   
   <url>

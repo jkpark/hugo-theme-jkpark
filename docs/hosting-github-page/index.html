@@ -3,7 +3,7 @@
 <head><meta charset="UTF-8">
 
 <title>
-    Docs - jkpark Demo
+    Hosting on GitHub Pages - jkpark Demo
 </title>
 
 <meta name="author" content="JK Park">
@@ -11,9 +11,9 @@
 <meta name="keywords" content="">
 
 <meta property="og:site_name" content="jkpark Demo">
-<meta property="og:title" content="Docs">
-<meta property="og:url" content="https://jkpark.github.io/hugo-theme-jkpark/docs/">
-<meta property="og:type" content="website">
+<meta property="og:title" content="Hosting on GitHub Pages">
+<meta property="og:url" content="https://jkpark.github.io/hugo-theme-jkpark/docs/hosting-github-page/">
+<meta property="og:type" content="article">
 
 
 <meta name="generator" content="Hugo 0.68.3" />
@@ -52,7 +52,7 @@
                 </li>
                 
                 <li>
-                    <a class='mh-item no-color-link selected' href="/hugo-theme-jkpark/docs/">Docs</a>
+                    <a class='mh-item no-color-link ' href="/hugo-theme-jkpark/docs/">Docs</a>
                 </li>
                 
             </ul>
@@ -67,7 +67,7 @@
   
   <div class="wrapper">
     <div class="title">
-      Docs
+      Hosting on GitHub Pages
     </div>
   </div>
 
@@ -537,12 +537,75 @@
 </header>
 
 <div class="toc-list">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-new-repository-on-the-github">Create New Repository on the github</a></li>
+    <li><a href="#import-your-hugo-folder-into-github">import your hugo folder into github</a></li>
+    <li><a href="#deployment-of-hugo-server-from-github-pages">Deployment of hugo server from github pages.</a>
+      <ul>
+        <li><a href="#deploying-as-userorganization-pages">Deploying as User/Organization Pages</a></li>
+        <li><a href="#deploying-as-project-pages">Deploying as Project Pages</a>
+          <ul>
+            <li><a href="#gitignore-public-folder">gitignore public folder</a></li>
+            <li><a href="#init-gh-pages-branch">init <code>gh-pages</code> branch</a></li>
+            <li><a href="#rebuild-and-deployment">Rebuild and Deployment</a></li>
+            <li><a href="#set-gh-pages-as-your-publish-branch">Set <code>gh-pages</code> as your publish branch</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 </div>
 </section></sidebar>
 <div class="wrapper">
   <article id="post-article" class="content">
-    <p>test</p>
+    <h1 id="create-new-repository-on-the-github">Create New Repository on the github</h1>
+<p>Go <a href="https://github.com/">github</a> and create new public Repository.</p>
+<h1 id="import-your-hugo-folder-into-github">import your hugo folder into github</h1>
+<p>goto your hugo folder which we made from the previous post.</p>
+<pre><code>cd demo
+</code></pre><pre><code>git add .
+git commit -m &quot;first commit&quot;
+git branch -M main
+git remote add origin https://github.com/&lt;your repo&gt;
+git push -u origin main
+</code></pre><p>now, hugo server is placed in the your github repo.</p>
+<h1 id="deployment-of-hugo-server-from-github-pages">Deployment of hugo server from github pages.</h1>
+<p>There are 2 types of GitHub Pages:</p>
+<ul>
+<li>User/Organization Pages ( https://&lt;USERNAME|ORGANIZATION&gt;.github.io/ )</li>
+<li>Project Pages (h ttps://&lt;USERNAME|ORGANIZATION&gt;.github.io/<PROJECT>/ )</li>
+</ul>
+<h2 id="deploying-as-userorganization-pages">Deploying as User/Organization Pages</h2>
+<h2 id="deploying-as-project-pages">Deploying as Project Pages</h2>
+<p>You can also tell GitHub pages to treat your main branch as the published site or point to a separate gh-pages branch. The latter approach is a bit more complex but has some advantages:</p>
+<ul>
+<li>It keeps your source and generated website in different branches and therefore maintains version control history for both.</li>
+<li>Unlike the preceding docs/ option, it uses the default public folder.</li>
+</ul>
+<h3 id="gitignore-public-folder">gitignore public folder</h3>
+<p>First, add the public folder to your .gitignore file at the project root so that the directory is ignored on the main branch</p>
+<pre><code>echo &quot;public&quot; &gt;&gt; .gitignore
+</code></pre><h3 id="init-gh-pages-branch">init <code>gh-pages</code> branch</h3>
+<pre><code>git checkout --orphan gh-pages
+git reset --hard
+git commit --allow-empty -m &quot;Initializing gh-pages branch&quot;
+git push origin gh-pages
+git checkout main
+</code></pre><h3 id="rebuild-and-deployment">Rebuild and Deployment</h3>
+<pre><code>rm -rf public
+git worktree add -B gh-pages public upstream/gh-pages
+</code></pre><pre><code>hugo
+cd public &amp;&amp; git add --all &amp;&amp; git commit -m &quot;Publishing to gh-pages&quot; &amp;&amp; cd ..
+git push upstream gh-pages
+</code></pre><h3 id="set-gh-pages-as-your-publish-branch">Set <code>gh-pages</code> as your publish branch</h3>
+<p>In order to use your gh-pages branch as your publishing branch, you’ll need to configure the repository within the GitHub UI. This will likely happen automatically once GitHub realizes you’ve created this branch. You can also set the branch manually from within your GitHub project:</p>
+<ol>
+<li>Go to Settings → GitHub Pages</li>
+<li>From Source, select “gh-pages branch” and then Save. If the option isn’t enabled, you likely have not created the branch yet OR you have not pushed the branch from your local machine to the hosted repository on GitHub.
+After a short while, you’ll see the updated contents on your GitHub Pages site.</li>
+</ol>
 
   </article>
   <div style="margin-top: 5vh;"></div>

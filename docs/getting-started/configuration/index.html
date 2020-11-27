@@ -3,7 +3,7 @@
 <head><meta charset="UTF-8">
 
 <title>
-    Docs - jkpark Demo
+    Configuration - jkpark Demo
 </title>
 
 <meta name="author" content="JK Park">
@@ -11,9 +11,9 @@
 <meta name="keywords" content="">
 
 <meta property="og:site_name" content="jkpark Demo">
-<meta property="og:title" content="Docs">
-<meta property="og:url" content="https://jkpark.github.io/hugo-theme-jkpark/docs/">
-<meta property="og:type" content="website">
+<meta property="og:title" content="Configuration">
+<meta property="og:url" content="https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/configuration/">
+<meta property="og:type" content="article">
 
 
 <meta name="generator" content="Hugo 0.68.3" />
@@ -52,7 +52,7 @@
                 </li>
                 
                 <li>
-                    <a class='mh-item no-color-link selected' href="/hugo-theme-jkpark/docs/">Docs</a>
+                    <a class='mh-item no-color-link ' href="/hugo-theme-jkpark/docs/">Docs</a>
                 </li>
                 
             </ul>
@@ -67,7 +67,7 @@
   
   <div class="wrapper">
     <div class="title">
-      Docs
+      Configuration
     </div>
   </div>
 
@@ -537,12 +537,27 @@
 </header>
 
 <div class="toc-list">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#default-configures">default configures</a>
+      <ul>
+        <li><a href="#data-folder">data folder</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 </div>
 </section></sidebar>
 <div class="wrapper">
   <article id="post-article" class="content">
-    <p>test</p>
+    <h1 id="default-configures">default configures</h1>
+<pre><code>config
+└── _default
+    ├── config.toml
+    ├── menus.toml
+    └── parems.toml
+</code></pre><h2 id="data-folder">data folder</h2>
+<p>contents of <code>data/aboutme.yaml</code> is displayed at the first section of the <a href="/">main page</a>.</p>
 
   </article>
   <div style="margin-top: 5vh;"></div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data and Content on jkpark Demo</title>
+    <link>https://jkpark.github.io/hugo-theme-jkpark/docs/data-and-content/</link>
+    <description>Recent content in Data and Content on jkpark Demo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Fri, 27 Nov 2020 16:48:40 +0900</lastBuildDate>
+    
+	<atom:link href="https://jkpark.github.io/hugo-theme-jkpark/docs/data-and-content/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

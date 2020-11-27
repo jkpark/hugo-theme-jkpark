@@ -3,7 +3,7 @@
 <head><meta charset="UTF-8">
 
 <title>
-    Docs - jkpark Demo
+    Project - jkpark Demo
 </title>
 
 <meta name="author" content="JK Park">
@@ -11,9 +11,9 @@
 <meta name="keywords" content="">
 
 <meta property="og:site_name" content="jkpark Demo">
-<meta property="og:title" content="Docs">
-<meta property="og:url" content="https://jkpark.github.io/hugo-theme-jkpark/docs/">
-<meta property="og:type" content="website">
+<meta property="og:title" content="Project">
+<meta property="og:url" content="https://jkpark.github.io/hugo-theme-jkpark/docs/data-and-content/about/project/">
+<meta property="og:type" content="article">
 
 
 <meta name="generator" content="Hugo 0.68.3" />
@@ -52,7 +52,7 @@
                 </li>
                 
                 <li>
-                    <a class='mh-item no-color-link selected' href="/hugo-theme-jkpark/docs/">Docs</a>
+                    <a class='mh-item no-color-link ' href="/hugo-theme-jkpark/docs/">Docs</a>
                 </li>
                 
             </ul>
@@ -67,7 +67,7 @@
   
   <div class="wrapper">
     <div class="title">
-      Docs
+      Project
     </div>
   </div>
 
@@ -537,12 +537,26 @@
 </header>
 
 <div class="toc-list">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-hew-project">Create Hew project</a></li>
+  </ul>
+</nav>
 </div>
 </section></sidebar>
 <div class="wrapper">
   <article id="post-article" class="content">
-    <p>test</p>
+    <h1 id="create-hew-project">Create Hew project</h1>
+<p>you can create new project directory using <code>--kind project-bundle</code></p>
+<pre><code>archetypes
+└── project-bundle
+    ├── images
+    │   └── preview.png
+    └── index.md
+</code></pre><pre><code>$ hugo new --kind project-bundle projects/first-project
+</code></pre><p>Will create a new project in <code>/content/projects/first-project</code> with the same set of files as in the <code>project-bundle</code> archetypes folder.</p>
+<p>You can override <code>preview.png</code> to your preview image of project.</p>
+<p>each project will be displayed at the project section of the <a href="/">main page</a> and more contents at the <a href="/projects/first-project/">project page</a></p>
 
   </article>
   <div style="margin-top: 5vh;"></div>
