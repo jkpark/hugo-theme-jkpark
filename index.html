@@ -27,16 +27,17 @@
 
 <link rel="stylesheet" href='/hugo-theme-jkpark/css/site.css'>
 <link rel="stylesheet" href='/hugo-theme-jkpark/css/page.css'>
-<link rel="stylesheet" href='/hugo-theme-jkpark/css/dyn.css'></head>
+<link rel="stylesheet" href='/hugo-theme-jkpark/css/dyn.css'>
+<link rel="stylesheet" href='/hugo-theme-jkpark/css/markdown.css'></head>
 
-<body class="thm-dark"><header id="masthead" class="thm-dark z5">
+<body class="thm-dark preload"><header id="masthead" class="thm-dark z5">
     <div class="wrapper">
         <nav class="mh-menu">
             <ul>
                 <li>
                     <div class="mh-logo">
                         <img class="avatar" src="https://avatars.githubusercontent.com/jkpark?size=36" alt="avatar" />
-                        <a href="/" class="text mh-item no-color-link">JK Park</a>
+                        <a href="https://jkpark.github.io/hugo-theme-jkpark/" class="text mh-item no-color-link">JK Park</a>
                     </div>
                 </li>
                 
@@ -56,10 +57,15 @@
             </ul>
         </nav>
         <nav class="mh-settings">
-            <a class="mh-item no-color-link" href="#">Setting</a>
+            <a class="mh-item no-color-link" href="#">
+            </a>
         </nav>
     </div>
 </header><main class="thm-light">
+<section id="main-header" class="thm-dark">
+</section>
+<section id="main-content">
+  
     
     <section class="aboutme">
         <div class="wrapper">
@@ -119,7 +125,42 @@
     
 
 
-    </main><footer>
+</section>
+
+    </main>
+
+    <script>
+        var mh = document.querySelector("#main-header");
+
+        function onScroll() {
+            if (window.scrollY > 1) {
+                mh.classList.add("scroll");
+            } else {
+                mh.classList.remove("scroll");
+            }
+        }
+
+        let ticking = false;
+        document.addEventListener("DOMContentLoaded", function(e) {
+            var limit = document.body.offsetHeight - window.innerHeight;
+            if(mh.offsetHeight < limit) {
+                mh.classList.add("sticky-top");
+            }
+            onScroll();
+            document.querySelector("body").classList.remove("preload");
+        });
+
+        window.addEventListener('scroll', function(e) {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    onScroll();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+    </script><footer>
     <p>
         Powered by the <a href="https://github.com/jkpark/hugo-theme-jkpark" target="_blank">jkpark</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a>.
     </p>

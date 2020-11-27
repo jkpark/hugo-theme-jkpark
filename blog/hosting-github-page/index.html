@@ -27,16 +27,17 @@
 
 <link rel="stylesheet" href='/hugo-theme-jkpark/css/site.css'>
 <link rel="stylesheet" href='/hugo-theme-jkpark/css/page.css'>
-<link rel="stylesheet" href='/hugo-theme-jkpark/css/dyn.css'></head>
+<link rel="stylesheet" href='/hugo-theme-jkpark/css/dyn.css'>
+<link rel="stylesheet" href='/hugo-theme-jkpark/css/markdown.css'></head>
 
-<body class="thm-dark"><header id="masthead" class="thm-dark z5">
+<body class="thm-dark preload"><header id="masthead" class="thm-dark z5">
     <div class="wrapper">
         <nav class="mh-menu">
             <ul>
                 <li>
                     <div class="mh-logo">
                         <img class="avatar" src="https://avatars.githubusercontent.com/jkpark?size=36" alt="avatar" />
-                        <a href="/" class="text mh-item no-color-link">JK Park</a>
+                        <a href="https://jkpark.github.io/hugo-theme-jkpark/" class="text mh-item no-color-link">JK Park</a>
                     </div>
                 </li>
                 
@@ -56,27 +57,67 @@
             </ul>
         </nav>
         <nav class="mh-settings">
-            <a class="mh-item no-color-link" href="#">Setting</a>
+            <a class="mh-item no-color-link" href="#">
+            </a>
         </nav>
     </div>
 </header><main class="thm-light">
-<section class="post">
-  <header id="post-header" class="thm-dark">
-    <div class="wrapper">
-      <div class="post-date mono"><small>Nov 11, 2020</small></div>
-      
-      <div class ="tags flex">
-        <a class="tag-item z2" href="/hugo-theme-jkpark/tags/github-pages/">#github pages</a><a class="tag-item z2" href="/hugo-theme-jkpark/tags/hugo/">#hugo</a>
-      </div>
-      
-      <div class="post-title">Hosting on GitHub Pages</div>
-      
-    </div>
-  </header>
+<section id="main-header" class="thm-dark">
+  
+<div class="wrapper">
+  
+  <div class="date mono"><small>Nov 11, 2020</small></div>
+  
+  
+  <div class ="tags flex">
+    <a class="tag-item z2 mono" href="/hugo-theme-jkpark/tags/github-pages/">#github pages</a><a class="tag-item z2 mono" href="/hugo-theme-jkpark/tags/hugo/">#hugo</a>
+  </div>
+  
+  <div class="title post-title">Hosting on GitHub Pages</div>
+</div>
 
-  <article id="post-article">
-    <div class="wrapper">
-      <h1 id="create-new-repository-on-the-github">Create New Repository on the github</h1>
+</section>
+<section id="main-content">
+  
+
+<sidebar id="section-toc" class="sticky-top pull-right-side">
+<section id="toc">
+<header id="toc-header">
+    <svg height="15px" width="15px" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor">
+        <g>
+            <line x1="21" y1="10" x2="7" y2="10"></line>
+            <line x1="21" y1="6" x2="3" y2="6"></line>
+            <line x1="21" y1="14" x2="3" y2="14"></line>
+            <line x1="21" y1="18" x2="7" y2="18"></line>
+        </g>
+    </svg>
+    <span class="label">Contents</span>
+</header>
+
+<div class="toc-list">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-new-repository-on-the-github">Create New Repository on the github</a></li>
+    <li><a href="#import-your-hugo-folder-into-github">import your hugo folder into github</a></li>
+    <li><a href="#deployment-of-hugo-server-from-github-pages">Deployment of hugo server from github pages.</a>
+      <ul>
+        <li><a href="#userorganization-pages">User/Organization Pages</a></li>
+        <li><a href="#project-pages">Project Pages</a></li>
+      </ul>
+    </li>
+    <li><a href="#gitignore-fublic-folder">gitignore fublic folder</a></li>
+    <li><a href="#init-gh-pages-branch">init <code>gh-pages</code> branch</a></li>
+    <li><a href="#rebuild-and-deployment">Rebuild and Deployment</a></li>
+    <li><a href="#set-gh-pages-as-your-publish-branch">Set <code>gh-pages</code> as your publish branch</a></li>
+  </ul>
+</nav>
+</div>
+</section></sidebar>
+
+<div class="wrapper">
+  <div style="margin-top: 5vh;"></div>
+  <article id="post-article" class="content">
+    <h1 id="create-new-repository-on-the-github">Create New Repository on the github</h1>
 <p>*reffered <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a></p>
 <p>create new public Repository on <a href="https://github.com/">github</a>.</p>
 <p>in my case, I created repo for demo site.</p>
@@ -126,21 +167,58 @@ git push upstream gh-pages
 After a short while, you’ll see the updated contents on your GitHub Pages site.</li>
 </ol>
 
-    </div>
   </article>
-
-  <section>
-    <div class="wrapper"><script src="https://utteranc.es/client.js"
+  <div style="margin-top: 5vh;"></div>
+  <section><div style="min-height: 268px;">
+    
+<script src="https://utteranc.es/client.js"
     repo="jkpark/jkpark.github.io-utterances"
     issue-term="pathname"
     theme="github-light"
     crossorigin="anonymous"
     async>
-</script></div>
-  </section>
+</script>
+
+
+</div></section>
+</div>
+
 </section>
 
-    </main><footer>
+    </main>
+
+    <script>
+        var mh = document.querySelector("#main-header");
+
+        function onScroll() {
+            if (window.scrollY > 1) {
+                mh.classList.add("scroll");
+            } else {
+                mh.classList.remove("scroll");
+            }
+        }
+
+        let ticking = false;
+        document.addEventListener("DOMContentLoaded", function(e) {
+            var limit = document.body.offsetHeight - window.innerHeight;
+            if(mh.offsetHeight < limit) {
+                mh.classList.add("sticky-top");
+            }
+            onScroll();
+            document.querySelector("body").classList.remove("preload");
+        });
+
+        window.addEventListener('scroll', function(e) {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    onScroll();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+    </script><footer>
     <p>
         Powered by the <a href="https://github.com/jkpark/hugo-theme-jkpark" target="_blank">jkpark</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a>.
     </p>

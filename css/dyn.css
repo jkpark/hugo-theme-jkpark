@@ -1,76 +1,4 @@
 /*                   */
-:root {
-    --max-width: 760px;
-}
-
-@media (max-width: 800px) {
-    :root {
-        --max-width: 95%;
-    }
-}
-
-.thm-light {
-    --color-bg: rgba(255, 255, 255);
-    --color-bg-secondary: rgb(245, 245, 245);
-    --color-bg-hover: rgb(240, 240, 240);
-    --color-text-primary: rgb(80, 80, 80);
-    --color-text-link:rgb(39, 91, 160);
-    --color-text-link-hover:rgb(0, 0, 0);
-    --color-border: rgb(200, 200, 200);
-    
-    color: var(--color-text-primary);
-    background-color: var(--color-bg);
-}
-
-.thm-dark {
-    --color-bg: rgb(26,26,26);
-    --color-bg-secondary: rgb(36, 36, 36);
-    --color-bg-hover: rgb(46, 46, 46);
-    --color-text-primary: rgb(221, 221, 221);
-    --color-text-link:rgb(140, 181, 235);
-    --color-text-link-hover:rgb(255, 255, 255);
-    --color-border: rgb(46, 46, 46);
-    
-    color: var(--color-text-primary);
-    background-color: var(--color-bg);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Ubuntu', sans-serif;
-    text-rendering: optimizeLegibility;
-}
-
-main {
-}
-
-p {
-    margin: 0.5em 0;
-    line-height: 160%;
-}
-
-a:link,
-a:visited,
-a:focus,
-a:active {
-    text-decoration: none;
-    color: var(--color-text-link);
-}
-
-a.no-color-link {
-    color: var(--color-text-primary);
-}
-
-a:hover, a.selected {
-    text-decoration: none;
-    color: var(--color-text-link-hover);
-}
-
-/*                   */
 
 .wrapper {
     width: 100%;
@@ -102,6 +30,8 @@ a:hover, a.selected {
 .f-row-left {
     flex: 1 0 0px;
     min-width: 100px;
+    display: flex;
+    justify-content: flex-end;
 }
 .f-row-middle {
     flex: 0 1 var(--max-width);
@@ -109,6 +39,8 @@ a:hover, a.selected {
 .f-row-right {
     flex: 1 0 0px;
     min-width: 100px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 @media (max-width: 1040px) {
@@ -121,6 +53,7 @@ a:hover, a.selected {
 
     .f-row-left {
         order: 1;
+        justify-content: flex-start;
     }
     .f-row-middle {
         order: 3;
@@ -132,6 +65,10 @@ a:hover, a.selected {
 
 .f-wrap {
     flex-wrap: wrap;
+}
+
+.f-space-between {
+    justify-content: space-between;
 }
 
 .tile {
@@ -175,6 +112,29 @@ a.stretched-link {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+}
+.pull-left-side {
+    float: left;
+    width: calc((100% - 800px) / 2 - 20px);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pull-right-side {
+    float: right;
+    width: calc((100% - 800px) / 2 - 20px);
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.label {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
 }
 
 .mono {

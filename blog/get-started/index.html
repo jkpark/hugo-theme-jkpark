@@ -27,16 +27,17 @@
 
 <link rel="stylesheet" href='/hugo-theme-jkpark/css/site.css'>
 <link rel="stylesheet" href='/hugo-theme-jkpark/css/page.css'>
-<link rel="stylesheet" href='/hugo-theme-jkpark/css/dyn.css'></head>
+<link rel="stylesheet" href='/hugo-theme-jkpark/css/dyn.css'>
+<link rel="stylesheet" href='/hugo-theme-jkpark/css/markdown.css'></head>
 
-<body class="thm-dark"><header id="masthead" class="thm-dark z5">
+<body class="thm-dark preload"><header id="masthead" class="thm-dark z5">
     <div class="wrapper">
         <nav class="mh-menu">
             <ul>
                 <li>
                     <div class="mh-logo">
                         <img class="avatar" src="https://avatars.githubusercontent.com/jkpark?size=36" alt="avatar" />
-                        <a href="/" class="text mh-item no-color-link">JK Park</a>
+                        <a href="https://jkpark.github.io/hugo-theme-jkpark/" class="text mh-item no-color-link">JK Park</a>
                     </div>
                 </li>
                 
@@ -56,27 +57,69 @@
             </ul>
         </nav>
         <nav class="mh-settings">
-            <a class="mh-item no-color-link" href="#">Setting</a>
+            <a class="mh-item no-color-link" href="#">
+            </a>
         </nav>
     </div>
 </header><main class="thm-light">
-<section class="post">
-  <header id="post-header" class="thm-dark">
-    <div class="wrapper">
-      <div class="post-date mono"><small>Nov 1, 2020</small></div>
-      
-      <div class ="tags flex">
-        <a class="tag-item z2" href="/hugo-theme-jkpark/tags/hugo/">#hugo</a>
-      </div>
-      
-      <div class="post-title">Get Started</div>
-      
-    </div>
-  </header>
+<section id="main-header" class="thm-dark">
+  
+<div class="wrapper">
+  
+  <div class="date mono"><small>Nov 1, 2020</small></div>
+  
+  
+  <div class ="tags flex">
+    <a class="tag-item z2 mono" href="/hugo-theme-jkpark/tags/hugo/">#hugo</a>
+  </div>
+  
+  <div class="title post-title">Get Started</div>
+</div>
 
-  <article id="post-article">
-    <div class="wrapper">
-      <h1 id="create-a-new-site">Create a New Site</h1>
+</section>
+<section id="main-content">
+  
+
+<sidebar id="section-toc" class="sticky-top pull-right-side">
+<section id="toc">
+<header id="toc-header">
+    <svg height="15px" width="15px" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor">
+        <g>
+            <line x1="21" y1="10" x2="7" y2="10"></line>
+            <line x1="21" y1="6" x2="3" y2="6"></line>
+            <line x1="21" y1="14" x2="3" y2="14"></line>
+            <line x1="21" y1="18" x2="7" y2="18"></line>
+        </g>
+    </svg>
+    <span class="label">Contents</span>
+</header>
+
+<div class="toc-list">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#create-a-new-site">Create a New Site</a></li>
+    <li><a href="#add-theme">Add Theme</a>
+      <ul>
+        <li><a href="#remove-unnessasory-defaults-files-and-folders">remove unnessasory defaults files and folders.</a></li>
+        <li><a href="#config-folder">config folder</a>
+          <ul>
+            <li><a href="#change-configures">change configures</a></li>
+          </ul>
+        </li>
+        <li><a href="#data-folder">data folder</a></li>
+      </ul>
+    </li>
+    <li><a href="#create-first-content">Create first content</a></li>
+    <li><a href="#start-the-hugo-server">Start the Hugo server</a></li>
+  </ul>
+</nav>
+</div>
+</section></sidebar>
+
+<div class="wrapper">
+  <div style="margin-top: 5vh;"></div>
+  <article id="post-article" class="content">
+    <h1 id="create-a-new-site">Create a New Site</h1>
 <pre><code>hugo new site demo
 </code></pre><p>The above will create a new Hugo site in a folder named <code>demo</code>.</p>
 <h1 id="add-theme">Add Theme</h1>
@@ -109,21 +152,58 @@ rm config.toml
 <pre><code>hugo server
 </code></pre><p>Navigate to your new site at http://localhost:1313/.</p>
 
-    </div>
   </article>
-
-  <section>
-    <div class="wrapper"><script src="https://utteranc.es/client.js"
+  <div style="margin-top: 5vh;"></div>
+  <section><div style="min-height: 268px;">
+    
+<script src="https://utteranc.es/client.js"
     repo="jkpark/jkpark.github.io-utterances"
     issue-term="pathname"
     theme="github-light"
     crossorigin="anonymous"
     async>
-</script></div>
-  </section>
+</script>
+
+
+</div></section>
+</div>
+
 </section>
 
-    </main><footer>
+    </main>
+
+    <script>
+        var mh = document.querySelector("#main-header");
+
+        function onScroll() {
+            if (window.scrollY > 1) {
+                mh.classList.add("scroll");
+            } else {
+                mh.classList.remove("scroll");
+            }
+        }
+
+        let ticking = false;
+        document.addEventListener("DOMContentLoaded", function(e) {
+            var limit = document.body.offsetHeight - window.innerHeight;
+            if(mh.offsetHeight < limit) {
+                mh.classList.add("sticky-top");
+            }
+            onScroll();
+            document.querySelector("body").classList.remove("preload");
+        });
+
+        window.addEventListener('scroll', function(e) {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    onScroll();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+    </script><footer>
     <p>
         Powered by the <a href="https://github.com/jkpark/hugo-theme-jkpark" target="_blank">jkpark</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a>.
     </p>

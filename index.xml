@@ -6,10 +6,50 @@
     <description>Recent content on jkpark Demo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Wed, 11 Nov 2020 20:16:45 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2020 15:44:55 +0900</lastBuildDate>
     
 	<atom:link href="https://jkpark.github.io/hugo-theme-jkpark/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Article. Group3-2</title>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/article2/</link>
+      <pubDate>Tue, 24 Nov 2020 14:29:15 +0900</pubDate>
+      
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/article2/</guid>
+      <description>test
+test
+test testtesttest
+test
+test test testtesttest
+test
+test testtesttest
+test
+test testtesttest
+test
+testaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa test testaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+test test# test testtesttest
+test test
+test testtesttest
+test
+test testtesttest
+test
+test testtesttest
+test
+test testtesttest
+test test testtest test testtesttest
+test
+test testtesttest
+test
+test testtesttest
+test
+test testtesttest
+test
+test test testtesttest
+test
+test testtest
+test test testtest</description>
+    </item>
     
     <item>
       <title>Get Started</title>
@@ -34,6 +74,51 @@ in my case, I created repo for demo site.
 https://github.com/jkpark/hugo-theme-jkpark-demo.git
 import your hugo folder into github goto your hugo folder which we made from the previous post.
 cd demo git add . git commit -m &amp;quot;first commit&amp;quot; git branch -M main git remote add origin https://github.com/jkpark/hugo-theme-jkpark-demo.git git push -u origin main now, hugo server is placed in the your github repo.</description>
+    </item>
+    
+    <item>
+      <title>Article. Group3 1</title>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/group3-1/article/</link>
+      <pubDate>Tue, 24 Nov 2020 15:44:55 +0900</pubDate>
+      
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/group3-1/article/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Article. Group3</title>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/article/</link>
+      <pubDate>Tue, 24 Nov 2020 14:29:15 +0900</pubDate>
+      
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/article/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Article. Group2</title>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/docs/group2/article-copy/</link>
+      <pubDate>Tue, 24 Nov 2020 14:29:14 +0900</pubDate>
+      
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/docs/group2/article-copy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Article. Group2</title>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/docs/group2/article/</link>
+      <pubDate>Tue, 24 Nov 2020 14:29:14 +0900</pubDate>
+      
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/docs/group2/article/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Article. Group1</title>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/docs/group1/article/</link>
+      <pubDate>Tue, 24 Nov 2020 14:29:13 +0900</pubDate>
+      
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/docs/group1/article/</guid>
+      <description></description>
     </item>
     
     <item>

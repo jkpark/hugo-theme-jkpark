@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chapter. Group3 on jkpark Demo</title>
+    <link>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/</link>
+    <description>Recent content in Chapter. Group3 on jkpark Demo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Tue, 24 Nov 2020 15:44:55 +0900</lastBuildDate>
+    
+	<atom:link href="https://jkpark.github.io/hugo-theme-jkpark/docs/group3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Article. Group3-2</title>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/article2/</link>
+      <pubDate>Tue, 24 Nov 2020 14:29:15 +0900</pubDate>
+      
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/article2/</guid>
+      <description>test
+test
+test testtesttest
+test
+test test testtesttest
+test
+test testtesttest
+test
+test testtesttest
+test
+testaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa test testaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+test test# test testtesttest
+test test
+test testtesttest
+test
+test testtesttest
+test
+test testtesttest
+test
+test testtesttest
+test test testtest test testtesttest
+test
+test testtesttest
+test
+test testtesttest
+test
+test testtesttest
+test
+test test testtesttest
+test
+test testtest
+test test testtest</description>
+    </item>
+    
+    <item>
+      <title>Article. Group3</title>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/article/</link>
+      <pubDate>Tue, 24 Nov 2020 14:29:15 +0900</pubDate>
+      
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/docs/group3/article/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

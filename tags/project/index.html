@@ -27,16 +27,17 @@
 
 <link rel="stylesheet" href='/hugo-theme-jkpark/css/site.css'>
 <link rel="stylesheet" href='/hugo-theme-jkpark/css/page.css'>
-<link rel="stylesheet" href='/hugo-theme-jkpark/css/dyn.css'></head>
+<link rel="stylesheet" href='/hugo-theme-jkpark/css/dyn.css'>
+<link rel="stylesheet" href='/hugo-theme-jkpark/css/markdown.css'></head>
 
-<body class="thm-dark"><header id="masthead" class="thm-dark z5">
+<body class="thm-dark preload"><header id="masthead" class="thm-dark z5">
     <div class="wrapper">
         <nav class="mh-menu">
             <ul>
                 <li>
                     <div class="mh-logo">
                         <img class="avatar" src="https://avatars.githubusercontent.com/jkpark?size=36" alt="avatar" />
-                        <a href="/" class="text mh-item no-color-link">JK Park</a>
+                        <a href="https://jkpark.github.io/hugo-theme-jkpark/" class="text mh-item no-color-link">JK Park</a>
                     </div>
                 </li>
                 
@@ -56,52 +57,59 @@
             </ul>
         </nav>
         <nav class="mh-settings">
-            <a class="mh-item no-color-link" href="#">Setting</a>
+            <a class="mh-item no-color-link" href="#">
+            </a>
         </nav>
     </div>
 </header><main class="thm-light">
-
-
-<section id="section-content" class="thm-dark">
-  <div class="wrapper">
-    <header id="section-title">
-      Tag / project
-    </header>
-    <article id="section-article">
-      
-    </article>
-  </div>
-</section><div class="flex-row">
-    <div class="f-row-left">
+<section id="main-header" class="thm-dark">
   
-    </div>
-    <div class="f-row-middle">
-      <section id="section-list">
-        <ul>
+<div class="wrapper">
+  <div class="title">
+    project
+  </div>
+  <div class="content">
+    
+</div>
+
+</section>
+<section id="main-content">
+  
+<section class="thm-dark">
+
+</section>
+
+<div class="flex-row">
+  <div class="f-row-left">
+
+  </div>
+  <div class="f-row-middle">
+    <section id="section-list">
+      <ul>
+        
+        <li class="tile flex-col z1">
+          <a class="stretched-link" href="/hugo-theme-jkpark/blog/create-new-project/"></a>
+          <div class="date mono"><small>Nov 11, 2020</small></div>
+          <div class="title"><h3>How to Create New Project</h3></div>
+          <div class="summary">
+            <p>
+              
+                explain how to create new project.
+              
+            </p>
+          </div>
           
-          <li class="tile flex-col z1">
-            <a class="stretched-link" href="/hugo-theme-jkpark/blog/create-new-project/"></a>
-            <div class="date mono"><small>Nov 11, 2020</small></div>
-            <div class="title"><h3>How to Create New Project</h3></div>
-            <div class="summary">
-              <p>
-                
-                  explain how to create new project.
-                
-              </p>
-            </div>
-            
-            <div class ="tags stretched-link-inner">
-              <a class="tag-item z2 mono" href="/hugo-theme-jkpark/tags/hugo/">#hugo</a><a class="tag-item z2 mono" href="/hugo-theme-jkpark/tags/project/">#project</a>
-            </div>
-            
-          </li>
+          <div class ="tags stretched-link-inner">
+            <a class="tag-item z2 mono" href="/hugo-theme-jkpark/tags/hugo/">#hugo</a><a class="tag-item z2 mono" href="/hugo-theme-jkpark/tags/project/">#project</a>
+          </div>
           
-        </ul>
-      </section>
-    </div>
-    <div class="f-row-right">
-      <section id="section-tag" class="sticky-top">
+        </li>
+        
+      </ul>
+    </section>
+  </div>
+  <div class="f-row-right">
+    <section id="section-tag" class="sticky-top">
 
 
 
@@ -112,8 +120,11 @@
 
 
 
-
-<div id="tag-cloud-title">All Tags</div>
+<section id="tag-cloud">
+<header id="tag-cloud-header">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5a1.25 1.25 0 0 0 0-2.5z" fill="currentColor"/><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v8.44c0 .397.158.779.44 1.06l10.25 10.25a1.5 1.5 0 0 0 2.12 0l8.44-8.44a1.5 1.5 0 0 0 0-2.12L12 1.44A1.5 1.5 0 0 0 10.94 1H2.5zm0 1.5h8.44l10.25 10.25l-8.44 8.44L2.5 10.94V2.5z" fill="currentColor"/></svg>
+    <span class="label">All Tags</span>
+</header>
 <div id="tag-cloud">
     
         
@@ -158,9 +169,46 @@
     
 </div>
 </section>
-    </div>
+</section>
   </div>
-    </main><footer>
+</div>
+
+</section>
+
+    </main>
+
+    <script>
+        var mh = document.querySelector("#main-header");
+
+        function onScroll() {
+            if (window.scrollY > 1) {
+                mh.classList.add("scroll");
+            } else {
+                mh.classList.remove("scroll");
+            }
+        }
+
+        let ticking = false;
+        document.addEventListener("DOMContentLoaded", function(e) {
+            var limit = document.body.offsetHeight - window.innerHeight;
+            if(mh.offsetHeight < limit) {
+                mh.classList.add("sticky-top");
+            }
+            onScroll();
+            document.querySelector("body").classList.remove("preload");
+        });
+
+        window.addEventListener('scroll', function(e) {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    onScroll();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+    </script><footer>
     <p>
         Powered by the <a href="https://github.com/jkpark/hugo-theme-jkpark" target="_blank">jkpark</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a>.
     </p>
