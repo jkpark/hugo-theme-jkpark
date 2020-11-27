@@ -113,6 +113,29 @@ a.stretched-link {
     position: sticky;
     top: 0;
 }
+.pull-left-side {
+    float: left;
+    width: calc((100% - 800px) / 2 - 20px);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pull-right-side {
+    float: right;
+    width: calc((100% - 800px) / 2 - 20px);
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.label {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
 
 .mono {
     font-family: "Ubuntu Mono";

@@ -23,7 +23,7 @@
         }
 
         let ticking = false;
-        window.addEventListener('load', function(e) {
+        document.addEventListener("DOMContentLoaded", function(e) {
             var limit = document.body.offsetHeight - window.innerHeight;
             if(mh.offsetHeight < limit) {
                 mh.classList.add("sticky-top");

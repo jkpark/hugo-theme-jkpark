@@ -22,24 +22,19 @@
 {{ end }}
 
 {{ define "main-content" }}
-<div class="flex-row">
-  <div class="f-row-left">
 
-  </div>
-  <div class="f-row-middle">
-    <article id="post-article" class="content">
-        {{ .Content }}
-    </article>
-    <div style="margin-top: 10vh;"></div>
-    <section>
-        {{- partial "widgets/comments.html" . -}}
-    </section>
+<sidebar id="section-toc" class="sticky-top pull-right-side">
+  {{- partial "widgets/toc.html" . -}}
+</sidebar>
 
-  </div>
-  <div class="f-row-right">
-    <section id="section-toc" class="sticky-top">
-      {{- partial "widgets/toc.html" . -}}
-    </section>
-  </div>
+<div class="wrapper">
+  <div style="margin-top: 5vh;"></div>
+  <article id="post-article" class="content">
+    {{ .Content }}
+  </article>
+  <div style="margin-top: 5vh;"></div>
+  <section>
+      {{- partial "widgets/comments.html" . -}}
+  </section>
 </div>
 {{ end }}

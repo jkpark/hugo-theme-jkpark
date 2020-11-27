@@ -2,7 +2,7 @@
 title: Docs
 description: 
 weight: 0
-collapsible: true
+collapse: hide # show | hide | always
 ---
 
 test

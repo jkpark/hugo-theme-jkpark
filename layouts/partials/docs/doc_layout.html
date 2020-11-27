@@ -16,25 +16,22 @@
 {{ end }}
 
 {{ define "main-content" }}
-<div class="flex-row">
-  <div class="f-row-left">
-    <section id="section-pagetree" class="sticky-top">
-    {{- partial "widgets/pagetree.html" . -}}
+<sidebar id="section-pagetree" class="sticky-top pull-left-side">
+  {{- partial "widgets/pagetree.html" . -}}
+</sidebar>
+
+<sidebar id="section-toc" class="sticky-top pull-right-side">
+{{- partial "widgets/toc.html" . -}}
+</sidebar>
+
+<div class="wrapper">
+  <div style="margin-top: 5vh;"></div>
+  <article id="post-article" class="content">
+    {{ .Content }}
+  </article>
+  <div style="margin-top: 5vh;"></div>
+  <section>
+      {{- partial "widgets/comments.html" . -}}
   </section>
-  </div>
-  <div class="f-row-middle">
-    <article id="post-article" class="content">
-      {{ .Content }}
-    </article>
-    <div style="margin-top: 10vh;"></div>
-    <section>
-        {{- partial "widgets/comments.html" . -}}
-    </section>
-  </div>
-  <div class="f-row-right">
-    <section id="section-toc" class="sticky-top">
-    {{- partial "widgets/toc.html" . -}}
-    </section>
-  </div>
 </div>
 {{ end }}
