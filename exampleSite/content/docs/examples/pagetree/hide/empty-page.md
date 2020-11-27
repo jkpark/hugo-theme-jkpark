@@ -1,10 +1,11 @@
 ---
-title: Article. Group3 1
+title: Empty Page
 description: 
-date: 2020-11-24T15:44:55+09:00
+date: 2020-11-27T17:00:46+09:00
+draft: false
 weight: 0
 image: "" # relative path of /static/images folder
 tags: []
-category: mnt
+category: docs
 enableToc: true
 ---

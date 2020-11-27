@@ -28,9 +28,13 @@
     {{ range $cur.Pages }}
     <ul class="pt-list">
         <li class="">
-            <div class="pt-item tile flex-row z1 f-space-between">
+            <div class="pt-item flex-row z1 f-space-between tile">
                 <a class="stretched-link" href="{{ .RelPermalink }}"></a>
-                <span class="title">{{ .Title }}</span>
+                <span class="title">
+                    {{ if .Params.Collapse }}<b>{{ end }}
+                    {{ .Title }}
+                    {{ if .Params.Collapse }}</b>{{ end }}
+                </span>
                 {{ if or (eq .Params.Collapse "hide") (eq .Params.Collapse "show") }}
                 <span class="pt-collapse-button stretched-link-inner {{ if eq .Params.Collapse "show" }}collapsed{{ end }}" data-target="">
                     <a class="">

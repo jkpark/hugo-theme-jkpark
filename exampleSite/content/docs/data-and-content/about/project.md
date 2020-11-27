@@ -1,12 +1,12 @@
 ---
-title: How to Create New Project
-description: "explain how to create new project."
-date: 2020-11-11T20:16:45+09:00
+title: Project
+description: 
+date: 2020-11-27T16:48:40+09:00
 draft: false
-weight: 0
+weight: 2
 image: "" # relative path of /static/images folder
-tags: [hugo, project]
-category: blog
+tags: []
+category: docs
 enableToc: true
 ---
 

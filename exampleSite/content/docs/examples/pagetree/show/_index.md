@@ -1,8 +1,6 @@
 ---
-title: Chapter. Group3 1
+title: Collapse Show
 description: 
 weight: 0
 collapse: show # show | hide | always
 ---
-
-content

@@ -1,0 +1,11 @@
+.notice {
+    border-top: 1px solid rgba(36, 97, 20, 0.4);
+    border-bottom: 1px solid rgba(36, 97, 20, 0.4);
+    background-color: rgba(36, 97, 20, 0.05);
+    padding: 10px;
+}
+
+.notice label {
+    font-weight: bold;
+    text-transform: uppercase;
+}

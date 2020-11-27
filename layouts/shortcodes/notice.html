@@ -1,0 +1,10 @@
+<!-- https://github.com/vjeantet/hugo-theme-docport/blob/master/layouts/shortcodes/notice.html -->
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div class="notice {{ with .Get 0 -}}{{.}}{{else}}primary{{end}}">
+	{{with .Params}}
+	{{- if len $.Params | eq 2 -}}
+	<label>{{- with $.Get 1 -}}{{.}}{{- end -}}</label>
+	{{- end -}}
+	{{- end -}}
+	{{if in  .Inner "\n" }}{{.Inner}}{{else}}<p>{{.Inner}}</p>{{end}}
+</div>

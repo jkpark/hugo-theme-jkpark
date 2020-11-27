@@ -1,10 +1,11 @@
 ---
-title: Article. {{ replace .Name "-" " " | title }}
+title: Empty Page
 description: 
-date: {{ .Date }}
+date: 2020-11-27T17:00:46+09:00
+draft: false
 weight: 0
 image: "" # relative path of /static/images folder
 tags: []
-category: {{ .Section }}
+category: docs
 enableToc: true
 ---
