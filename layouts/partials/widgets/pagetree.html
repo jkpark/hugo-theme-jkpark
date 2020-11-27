@@ -1,0 +1,54 @@
+
+
+{{ $root := (.Site.GetPage "section" .Type) }}
+<nav id="pagetree">
+    <header id="pt-header">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M3 2.75A2.75 2.75 0 0 1 5.75 0h14.5a.75.75 0 0 1 .75.75v20.5a.75.75 0 0 1-.75.75h-6a.75.75 0 0 1 0-1.5h5.25v-4H6A1.5 1.5 0 0 0 4.5 18v.75c0 .716.43 1.334 1.05 1.605a.75.75 0 0 1-.6 1.374A3.25 3.25 0 0 1 3 18.75v-16zM19.5 1.5V15H6c-.546 0-1.059.146-1.5.401V2.75c0-.69.56-1.25 1.25-1.25H19.5z" fill="currentColor"/><path d="M7 18.25a.25.25 0 0 1 .25-.25h5a.25.25 0 0 1 .25.25v5.01a.25.25 0 0 1-.397.201l-2.206-1.604a.25.25 0 0 0-.294 0L7.397 23.46a.25.25 0 0 1-.397-.2v-5.01z" fill="currentColor"/></svg>
+        <span class="label">Pagetree</span>
+    </header>
+    <div class="pt-items">
+    {{ template "page-tree" (dict "cur" $root "depth" 0)}}
+    </div>
+</nav>
+
+<script>
+    var btns = document.getElementsByClassName("pt-collapse-button");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            this.classList.toggle("collapsed");
+            this.parentElement.nextElementSibling.classList.toggle("collapsed");
+        });
+    }
+
+</script>
+
+{{ define "page-tree" }}
+    {{ $cur := .cur }}
+    {{ $depth := .depth }}
+    {{ range $cur.Pages }}
+    <ul class="pt-list">
+        <li class="">
+            <div class="pt-item tile flex-row z1 f-space-between">
+                <a class="stretched-link" href="{{ .RelPermalink }}"></a>
+                <span class="title">{{ .Title }}</span>
+                {{ if or (eq .Params.Collapse "hide") (eq .Params.Collapse "show") }}
+                <span class="pt-collapse-button stretched-link-inner {{ if eq .Params.Collapse "show" }}collapsed{{ end }}" data-target="">
+                    <a class="">
+                        <svg class="pt-item-button-icon" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                        stroke="currentColor"><g><polyline points="9 18 15 12 9 6"></polyline></g></svg>
+                    </a>
+                </span>
+                {{ end }}
+            </div>
+                
+            {{ if .Params.Collapse }}
+            <div class="pt-item-childs {{ if or (eq .Params.Collapse "always") (eq .Params.Collapse "show") }}collapsed{{ end }}">
+                {{ template "page-tree" (dict "cur" . "depth" 1)}}
+            </div>
+            {{ end }}
+        </li>
+    </ul>
+    {{ end }}
+{{ end }}
+
