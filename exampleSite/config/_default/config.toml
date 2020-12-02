@@ -25,6 +25,8 @@ timeout = 10000
 # Default number of elements per page in pagination.
 paginate = 10
 
+# for extract date in filename
+# /content/blog/2006-01-02-post.md will be http://baseURL/blog/post/
 [frontmatter]
   date  = [":filename", ":default"]
 
@@ -50,8 +52,3 @@ paginate = 10
     lineNumbersInTable = true
     noClasses = true
     style = "github"
-
-[frontmatter]
-# for extract date in filename
-# /content/blog/2006-01-02-post.md will be http://baseURL/blog/post/
-  date  = [":filename", ":default"] 

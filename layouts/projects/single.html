@@ -23,20 +23,12 @@
       <div class="project-image-container">
         <img src='{{ .RelPermalink }}{{ "images/preview.png" | urlize }}' class="project-image" alt="{{ .Params.name }}" onerror="this.style.display='none'" />
       </div>
-<<<<<<< HEAD
-      <p>{{ .Params.start_date }} ~ {{ .Params.end_date }}</p>
+      <p>{{ .Params.period }}</p>
       <p><strong>As {{ .Params.role | safeHTML }}</strong></p>
       <p>Using {{ .Params.language | safeHTML }}</p>
       <p>{{ .Params.description | safeHTML }}</p>
 
       
-=======
-
-      <p>Using {{ .Params.language | safeHTML }}</p>
-      <p><strong>As {{ .Params.role | safeHTML }}</strong></p>
-      <p>Using {{ .Params.language | safeHTML }}</p>
-      <p>{{ .Params.description | safeHTML }}</p>
->>>>>>> HEAD@{1}
       <p>
           <strong>Achievements</strong><br>
           {{ range .Params.achievements }} - {{ . | safeHTML }}<br>{{ end }}
