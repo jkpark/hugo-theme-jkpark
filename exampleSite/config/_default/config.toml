@@ -6,8 +6,8 @@ baseURL = "https://jkpark.github.io/hugo-theme-jkpark/"
 
 title = "jkpark Demo"
 
-# Uncomment for google analytics
-google_analytics = ""
+# Enter your Google Analytics web tracking code (e.g. UA-000000000-1) to activate tracking
+googleAnalytics = ""
 
 # Enable Emoji emoticons support for page content; see the Emoji Cheat Sheet(https://www.webfx.com/tools/emoji-cheat-sheet/).
 enableEmoji = true
@@ -47,3 +47,8 @@ paginate = 10
     lineNumbersInTable = true
     noClasses = true
     style = "github"
+
+[frontmatter]
+# for extract date in filename
+# /content/blog/2006-01-02-post.md will be http://baseURL/blog/post/
+  date  = [":filename", ":default"] 

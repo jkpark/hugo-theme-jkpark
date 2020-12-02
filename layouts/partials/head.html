@@ -18,11 +18,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+{{- partial "widgets/google_analytics.html" . -}}
+
 <!--
 {{/*
 <link rel="canonical" href="{{ page.url | prepend: site.url }}">
-
-{% include analytics.html %}
 
 {% if site.google_site_verification %}
 <meta name="google-site-verification" content="H73FzMq39pLvMqBQL_e5f-JlaipO9MkcGC_ce_3xlDA" />
@@ -40,3 +40,4 @@
 <link rel="stylesheet" href='{{ "/css/dyn.css" | relURL }}'>
 <link rel="stylesheet" href='{{ "/css/markdown.css" | relURL }}'>
 <link rel="stylesheet" href='{{ "/css/shortcodes.css" | relURL }}'>
+
