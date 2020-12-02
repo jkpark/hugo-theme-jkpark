@@ -31,7 +31,8 @@
 <link rel="stylesheet" href='/hugo-theme-jkpark/css/markdown.css'>
 <link rel="stylesheet" href='/hugo-theme-jkpark/css/shortcodes.css'></head>
 
-<body class="thm-dark preload"><header id="masthead" class="thm-dark z5">
+<body class="thm-dark preload">
+    <div class="overay"></div><header id="masthead" class="thm-dark">
     <div class="wrapper">
         <nav class="mh-menu">
             <ul>
@@ -66,6 +67,7 @@
 <section id="main-header" class="thm-dark">
   
   <div class="wrapper">
+    <button class="pt-toggle">pt</button>
     <div class="title">
       Data and Content
     </div>
@@ -126,13 +128,45 @@
             <div class="pt-item flex-row z1 f-space-between tile">
                 <a class="stretched-link" href="/hugo-theme-jkpark/docs/getting-started/configuration/"></a>
                 <span class="title">
-                    
+                    <b>
                     Configuration
+                    </b>
+                </span>
+                
+                <span class="pt-collapse-button stretched-link-inner " data-target="">
+                    <a class="">
+                        <svg class="pt-item-button-icon" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                        stroke="currentColor"><g><polyline points="9 18 15 12 9 6"></polyline></g></svg>
+                    </a>
+                </span>
+                
+            </div>
+                
+            
+            <div class="pt-item-childs ">
+                
+    
+    
+    
+    <ul class="pt-list">
+        <li class="">
+            <div class="pt-item flex-row z1 f-space-between tile">
+                <a class="stretched-link" href="/hugo-theme-jkpark/docs/getting-started/configuration/utteranc-es/"></a>
+                <span class="title">
+                    
+                    Utteranc.es
                     
                 </span>
                 
             </div>
                 
+            
+        </li>
+    </ul>
+    
+
+            </div>
             
         </li>
     </ul>
@@ -507,6 +541,9 @@
     </div>
 </nav>
 
+
+
+
 <script>
     var btns = document.getElementsByClassName("pt-collapse-button");
     for (var i = 0; i < btns.length; i++) {
@@ -561,6 +598,18 @@
 
 </section>
 
+<script>
+  document.querySelector(".pt-toggle").addEventListener("click", function() {
+      document.querySelector("#section-pagetree").classList.add("active");
+      document.querySelector(".overay").classList.add("active");
+  });
+
+  document.querySelector(".overay").addEventListener("click", function() {
+      document.querySelector("#section-pagetree").classList.remove("active");
+      document.querySelector(".overay").classList.remove("active");
+  });
+</script>
+
 
 
 
@@ -568,9 +617,11 @@
     </main>
 
     <script>
+        var masthead = document.querySelector("#masthead");
         var mh = document.querySelector("#main-header");
 
         function onScroll() {
+
             if (window.scrollY > 1) {
                 mh.classList.add("scroll");
             } else {

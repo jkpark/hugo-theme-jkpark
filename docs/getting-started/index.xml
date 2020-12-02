@@ -6,7 +6,7 @@
     <description>Recent content in Getting Started on jkpark Demo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Fri, 27 Nov 2020 15:48:51 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 12:11:18 +0900</lastBuildDate>
     
 	<atom:link href="https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
     
@@ -20,15 +20,6 @@
       <description>Create a New Site hugo new site demo The above will create a new Hugo site in a folder named demo.
 Install jkpark theme as git submodule cd demo git init git submodule add https://github.com/jkpark/hugo-theme-jkpark.git themes/jkpark Take a look inside the exampleSite folder of this theme.
 themes/jkpark/exampleSite ├── content # some example contents for demo site. ├── data └── aboutme.yaml └── config └── _default ├── config.toml ├── menus.toml └── parems.toml remove unnessasory defaults files and folders.</description>
-    </item>
-    
-    <item>
-      <title>Configuration</title>
-      <link>https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/configuration/</link>
-      <pubDate>Fri, 27 Nov 2020 15:48:51 +0900</pubDate>
-      
-      <guid>https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/configuration/</guid>
-      <description>default configures config └── _default ├── config.toml ├── menus.toml └── parems.toml data folder contents of data/aboutme.yaml is displayed at the first section of the main page.</description>
     </item>
     
   </channel>

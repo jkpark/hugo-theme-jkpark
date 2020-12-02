@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuration on jkpark Demo</title>
+    <link>https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/configuration/</link>
+    <description>Recent content in Configuration on jkpark Demo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko</language>
+    <lastBuildDate>Mon, 30 Nov 2020 12:11:18 +0900</lastBuildDate>
+    
+	<atom:link href="https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/configuration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Utteranc.es</title>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/configuration/utteranc-es/</link>
+      <pubDate>Mon, 30 Nov 2020 12:11:18 +0900</pubDate>
+      
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/configuration/utteranc-es/</guid>
+      <description>utteranc.es utteranc.es is a lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!</description>
+    </item>
+    
+  </channel>
+</rss>

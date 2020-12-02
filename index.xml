@@ -6,7 +6,7 @@
     <description>Recent content on jkpark Demo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Fri, 27 Nov 2020 17:00:46 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 12:11:18 +0900</lastBuildDate>
     
 	<atom:link href="https://jkpark.github.io/hugo-theme-jkpark/index.xml" rel="self" type="application/rss+xml" />
     
@@ -35,15 +35,6 @@ each project will be displayed at the project section of the main page and more 
     </item>
     
     <item>
-      <title>Configuration</title>
-      <link>https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/configuration/</link>
-      <pubDate>Fri, 27 Nov 2020 15:48:51 +0900</pubDate>
-      
-      <guid>https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/configuration/</guid>
-      <description>default configures config └── _default ├── config.toml ├── menus.toml └── parems.toml data folder contents of data/aboutme.yaml is displayed at the first section of the main page.</description>
-    </item>
-    
-    <item>
       <title>Hosting on GitHub Pages</title>
       <link>https://jkpark.github.io/hugo-theme-jkpark/docs/hosting-github-page/</link>
       <pubDate>Fri, 27 Nov 2020 14:16:45 +0900</pubDate>
@@ -53,6 +44,15 @@ each project will be displayed at the project section of the main page and more 
 import your hugo folder into github goto your hugo folder which we made from the previous post.
 cd demo git add . git commit -m &amp;quot;first commit&amp;quot; git branch -M main git remote add origin https://github.com/&amp;lt;your repo&amp;gt; git push -u origin main now, hugo server is placed in the your github repo.
 Deployment of hugo server from github pages.</description>
+    </item>
+    
+    <item>
+      <title>Utteranc.es</title>
+      <link>https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/configuration/utteranc-es/</link>
+      <pubDate>Mon, 30 Nov 2020 12:11:18 +0900</pubDate>
+      
+      <guid>https://jkpark.github.io/hugo-theme-jkpark/docs/getting-started/configuration/utteranc-es/</guid>
+      <description>utteranc.es utteranc.es is a lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!</description>
     </item>
     
     <item>
