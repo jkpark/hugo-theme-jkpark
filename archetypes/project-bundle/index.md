@@ -1,6 +1,8 @@
 ---
 name: {{ replace .Name "-" " " | title }}
 identifier: {{ .Name }}
+weight: 0
+period: 2006.01 ~ 2006.02
 oneliner: one line descprtion
 role: a developer
 language : Java? C?

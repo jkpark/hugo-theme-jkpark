@@ -1,13 +1,11 @@
 ---
 title: Hosting on GitHub Pages
 description: 
-date: 2020-11-27T14:16:45+09:00
+date: 2020-12-02T20:09:19+09:00
 draft: false
 weight: 3
 image: "" # relative path of /static/images folder
-tags: []
-category: docs
-enableToc: true
+type: docs
 ---
 
 

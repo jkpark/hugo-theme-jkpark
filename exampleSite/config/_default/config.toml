@@ -25,6 +25,9 @@ timeout = 10000
 # Default number of elements per page in pagination.
 paginate = 10
 
+[frontmatter]
+  date  = [":filename", ":default"]
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

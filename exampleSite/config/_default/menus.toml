@@ -9,11 +9,11 @@
     name = "Blog"
     url = "/blog/"
     weight = 2
-    type = "page"
+    type = "blog"
 
 [[main]]
     identifier = "docs"
     name = "Docs"
     url = "/docs/"
     weight = 3
-    type = "book"
+    type = "docs"
