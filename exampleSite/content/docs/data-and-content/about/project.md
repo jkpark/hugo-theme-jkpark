@@ -1,13 +1,12 @@
 ---
 title: Project
 description: 
-date: 2020-11-27T16:48:40+09:00
+date: 2020-12-02T20:09:19+09:00
 draft: false
-weight: 2
+weight: 0
 image: "" # relative path of /static/images folder
-tags: []
-category: docs
-enableToc: true
+collapse: hide # show | hide | always
+type: docs
 ---
 
 # Create Hew project

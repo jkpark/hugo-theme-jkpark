@@ -34,11 +34,11 @@
             <div class="pt-item flex-row z1 f-space-between tile">
                 <a class="stretched-link" href="{{ .RelPermalink }}"></a>
                 <span class="title">
-                    {{ if .Params.Collapse }}<b>{{ end }}
+                    {{ if .Pages }}<b>{{ end }}
                     {{ .Title }}
-                    {{ if .Params.Collapse }}</b>{{ end }}
+                    {{ if .Pages }}</b>{{ end }}
                 </span>
-                {{ if or (eq .Params.Collapse "hide") (eq .Params.Collapse "show") }}
+                {{ if and .Pages ( or (eq .Params.Collapse "hide") (eq .Params.Collapse "show")) }}
                 <span class="pt-collapse-button stretched-link-inner {{ if eq .Params.Collapse "show" }}collapsed{{ end }}" data-target="">
                     <a class="">
                         <svg class="pt-item-button-icon" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@
                 {{ end }}
             </div>
                 
-            {{ if .Params.Collapse }}
+            {{ if .Pages }}
             <div class="pt-item-childs {{ if or (eq .Params.Collapse "always") (eq .Params.Collapse "show") }}collapsed{{ end }}">
                 {{ template "page-tree" (dict "cur" . "depth" 1)}}
             </div>

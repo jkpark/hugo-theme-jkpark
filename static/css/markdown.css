@@ -36,7 +36,19 @@
     margin-top: 0.5em;
 }
 
-pre {
+.content table {
+    margin: auto;
+    font-size: inherit;
+    border-collapse: collapse;
+  }
+
+.content table td,
+.content table th {
+    border: 1px solid var(--color-border);
+    padding: 0.4em;
+  }
+
+.contentpre {
     border-width: 1px 0px;
     border-style: solid none;
     border-color: rgb(210, 210, 210);
@@ -46,11 +58,11 @@ pre {
     line-height: 140%;
 }
 
-code {
+.content code {
     
 }
 
-blockquote {
+.content blockquote {
     border-left: 3px solid #ddd;
     margin-left: 1em;
     padding-left: 1em;

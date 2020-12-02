@@ -1,13 +1,11 @@
 ---
 title: Installation
 description: 
-date: 2020-11-27T13:41:23+09:00
+date: 2020-12-02T20:09:19+09:00
 draft: false
 weight: 1
 image: "" # relative path of /static/images folder
-tags: []
-category: docs
-enableToc: true
+type: docs
 ---
 
 # Create a New Site
