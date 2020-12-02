@@ -5,6 +5,8 @@
 </head>
 
 <body class="thm-dark preload">
+    <div class="overay"></div>
+
     {{- partial "masthead.html" . -}}
 
     <main class="thm-light">
@@ -12,9 +14,11 @@
     </main>
 
     <script>
+        var masthead = document.querySelector("#masthead");
         var mh = document.querySelector("#main-header");
 
         function onScroll() {
+
             if (window.scrollY > 1) {
                 mh.classList.add("scroll");
             } else {

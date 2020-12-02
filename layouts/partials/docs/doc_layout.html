@@ -6,9 +6,22 @@
   {{ template "main-content" . }}
 </section>
 
+<script>
+  document.querySelector(".pt-toggle").addEventListener("click", function() {
+      document.querySelector("#section-pagetree").classList.add("active");
+      document.querySelector(".overay").classList.add("active");
+  });
+
+  document.querySelector(".overay").addEventListener("click", function() {
+      document.querySelector("#section-pagetree").classList.remove("active");
+      document.querySelector(".overay").classList.remove("active");
+  });
+</script>
+
 
 {{ define "main-header" }}
   <div class="wrapper">
+    <button class="pt-toggle">pt</button>
     <div class="title">
       {{ .Title }}
     </div>
