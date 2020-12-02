@@ -21,7 +21,7 @@
     {{ with .Site.GetPage "section" "projects" }}
     <section class="projects">
         <header class="wrapper"><h1>Projects</h1></header>
-        {{ range .Pages }}
+        {{ range .Pages.ByWeight }}
         <section class="project tile">
             <div class="wrapper">
                 <a class="stretched-link" href='{{ "/projects/" | relLangURL }}{{ .Params.identifier | urlize }}'></a>
