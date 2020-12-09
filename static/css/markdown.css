@@ -29,8 +29,13 @@
     font-size: small;
 }
 
+.content hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 .content li {
-    margin-left: 1em;
+    margin-left: 1.5em;
 }
 .content li + li {
     margin-top: 0.5em;
@@ -40,7 +45,7 @@
     margin: auto;
     font-size: inherit;
     border-collapse: collapse;
-  }
+}
 
 .content table td,
 .content table th {
@@ -48,22 +53,34 @@
     padding: 0.4em;
   }
 
-.contentpre {
+.content pre {
     border-width: 1px 0px;
     border-style: solid none;
     border-color: rgb(210, 210, 210);
     margin: 1em 0;
     padding: 1em;
-    background-color: var(--color-bg-secondary);
+    background-color: var(--color-bg-secondary) !important;
     line-height: 140%;
 }
 
 .content code {
-    
+    border: 1px solid rgb(210, 210, 210);
+    padding: 2px;
+}
+
+.content pre code {
+    border: none;
+    padding: 0px;
 }
 
 .content blockquote {
     border-left: 3px solid #ddd;
     margin-left: 1em;
     padding-left: 1em;
+}
+
+.content img {
+    max-width: calc(var(--max-width) - 100px);
+    margin-left: 50px;
+    margin-right: 50px;
 }

@@ -77,11 +77,11 @@
 
 /*          pagetree                   */
 #section-pagetree {
-    padding: 20px;
-    top: 50px;
+    height: 100vh;
 }
 
 #pagetree {
+    padding: 20px;
     min-width: 200px;
     width: 100%;
     max-width: 280px;
