@@ -25,6 +25,11 @@
     <div class="title">
       {{ .Title }}
     </div>
+    {{ if .Params.Oneliner }}
+    <div class="oneliner">
+      {{ .Params.oneliner }}
+    </div>
+    {{ end }}
   </div>
 {{ end }}
 

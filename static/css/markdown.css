@@ -45,7 +45,8 @@
     margin: auto;
     font-size: inherit;
     border-collapse: collapse;
-}
+    width: 100%;
+  }
 
 .content table td,
 .content table th {
