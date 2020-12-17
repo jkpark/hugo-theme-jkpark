@@ -13,6 +13,12 @@
         {{- block "main" . }}{{- end }}
     </main>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function(e) {
+            var limit = document.body.offsetHeight - window.innerHeight;
+            document.querySelector("body").classList.remove("preload");
+        });
+    </script>
     <!--
     <script>
         var masthead = document.querySelector("#masthead");
