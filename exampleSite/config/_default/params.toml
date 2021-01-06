@@ -9,3 +9,7 @@
 [github]
   owner = "jkpark"
   repo = "hugo-theme-jkpark"
+
+# Enter your Utterance Repo for Comments
+[utterance]
+  repo = "hugo-theme-jkpark-comments"

@@ -1,12 +1,15 @@
+
+
+{{ with .Site.Params.utterance.repo }}
 <div style="min-height: 268px;">
     
 <script src="https://utteranc.es/client.js"
-    repo="jkpark/jkpark.github.io-utterances"
+    repo="{{ . }}"
     issue-term="pathname"
     theme="github-light"
     crossorigin="anonymous"
     async>
 </script>
 
-
 </div>
+{{ end }}
